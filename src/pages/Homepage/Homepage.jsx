@@ -1,4 +1,4 @@
-// import Navbar from './../../components/Navbar/Navbar'
+//  import Navbar from './../../components/Navbar/Navbar'
 // import Hero from './../../components/Hero/Hero'
 // import Rooms from './../../components/Rooms/Rooms'
 // import Spa from './../../components/Spa/Spa'

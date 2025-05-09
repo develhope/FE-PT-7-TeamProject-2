@@ -1,6 +1,5 @@
 import FooterSocial from './FooterSocial/FooterSocial'
-// import css quando lo farò... :( #AIUTO VOGLIO CREPARE :((((
-
+import './Footer.css'
 
 
 const Footer = () => {
@@ -49,6 +48,8 @@ const Footer = () => {
 
             </div>
         </>
+
+
     )
 }
 
