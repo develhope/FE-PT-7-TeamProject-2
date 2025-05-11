@@ -13,7 +13,7 @@ function Navbar() {
           />
         </div>
         <div className="navbar-links">
-          <a href="FE-PT-7-TeamProject-2\src\components\Rooms\Rooms.jsx">
+          <a href="FE-PT-7-TeamProject-2/src/components/Rooms/Rooms.jsx">
             Rooms
           </a>
 
