@@ -1,0 +1,29 @@
+.main-container-of-Premium-Experiences {
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+.header-section-of-P-E {
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: -40px;
+}
+
+.header-title-of-P-E {
+    font-weight: 600;
+}
+
+.header-subtitle-of-P-E {
+    font-size: 1rem;
+    color: #e1dddd;
+    font-weight: 500;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.header-divider-of-P-E {
+    height: 1px;
+    background-color: #C4A55F;
+    width: 20%;
+    margin: 1rem auto;
+}
