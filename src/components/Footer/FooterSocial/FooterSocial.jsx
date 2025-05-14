@@ -1,6 +1,6 @@
 import SocialIcon from './FooterSocialIcon'
 
-const FooterSocial = () => {
+function FooterSocial() {
     const socialLinks = [
         {
             name: 'Instagram',
