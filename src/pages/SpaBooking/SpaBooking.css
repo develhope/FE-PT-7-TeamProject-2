@@ -1,24 +1,21 @@
 .spa-booking {
-    max-width: 1200px;
     font-family: Arial, sans-serif;
-    background-color: #0B1120;
+    background-color: var(--clr-dark-blue);
     color: #ffffff;
-    margin: 0 auto; 
+    padding: 60px;
     display: flex; 
     flex-direction: column;
     align-items: center; 
     justify-content: flex-start;
-    min-height: 100vh;
 }
 
 .spa-booking-cards {
     display: grid;
-    grid-template-columns:repeat(2, 1fr); /* Adatta il numero di colonne */
-    gap: 30px; /* Spazio tra le card */
-    width: 100%; 
-    height: auto;/* Assicura che il contenitore occupi tutta la larghezza */
-    padding: 10px; /* Aggiunge spazio interno */
-    justify-items: center; /* Centra le card */
+    grid-template-columns:repeat(2, 1fr); 
+    gap: 30px; 
+    width: 90%; 
+    height: auto;
+    justify-items: center; 
 }
 
 .spa-booking-head {
@@ -31,5 +28,32 @@
 }
 .spa-card-content {
     gap: 20px;
+    width: 100%;
+    display: flex;
+    height: auto;
 }
-
+.spa-guest-info {
+    background-color: var(--clr-blue);
+    padding: 30px;
+    border: 1px solid var(--clr-gold);
+    border-radius: 8px;
+    margin: 0 auto 40px;
+    color: var(--clr-gold);
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   max-width: 20%;
+   margin-top: 30px;
+}
+.spa-guest-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.spa-guest-form input {
+    padding: 6px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: var(--clr-dark-blue);
+    color: #a4894e;
+}

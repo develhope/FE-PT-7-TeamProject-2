@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SpaBookingCard.css";
 
-function SpaBookingCard({ imgSrc, title, description, price }) {
+function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -26,7 +26,7 @@ function SpaBookingCard({ imgSrc, title, description, price }) {
             </div>
             
             <div>
-              <label htmlFor="time">Time<br/></label>
+              <label htmlFor="time">Time <br/></label>
               <select id="booking-appointment">
                 <option value="10:00">10:00 - 11:00</option>
                 <option value="11:00">11:00 - 12:00</option>
@@ -43,7 +43,13 @@ function SpaBookingCard({ imgSrc, title, description, price }) {
               <p className="spa-price">Price: ${price}</p>
             </div>
           </form>
-          <button className="button-submit">ADD</button>
+          <button
+            type="button"
+            className="button-submit"
+            onClick={() => onAdd({ title, price, imgSrc })}
+          >
+            ADD
+          </button>
         </div>
       </div>
     </div>

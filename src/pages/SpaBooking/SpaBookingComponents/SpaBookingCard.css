@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #1b2745;
+    background-color: var(--clr-blue);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--clr-gold);
@@ -18,10 +18,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.spa-booking-card:hover {
-    transform: scale(1.05); /* Effetto zoom al passaggio del mouse */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
-}
 
 .spa-booking-card::before {
     content: "";
@@ -48,19 +44,19 @@
 }
 
 .spa-booking-card-images {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     margin-top: 10px;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 90%;
     margin: 10px auto;
 }
 
 .spa-booking-card-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
     filter: brightness(0.9);
 }
@@ -78,29 +74,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #10182b;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease; 
-    z-index: 1;
-    padding: 10px;
+    z-index: 2;
     color: var(--clr-gold);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.5s ease-in-out;
     gap: 15px;
-    padding: 10px;
+    border: var(--clr-gold) 1px solid;
 }
 
 .spa-form label,
-.spa-form p {
+.spa-form p{
     margin-bottom: 5px;
     font-size: 14px;
     color: var(--clr-gold);
-    text-align: left; /* Allinea il testo a sinistra */
+    text-align:center; 
 }
 
 .spa-form .spa-price {
@@ -114,7 +109,7 @@
     padding: 6px;
     border: 1px solid #C4A55F;
     border-radius: 8px;
-    background-color: #152238;
+    background-color: var(--clr-dark-blue);
     color: #a4894e;
     font-size: 12px;
     margin-bottom: 10px;
@@ -131,20 +126,4 @@
 
 .spa-booking-card:hover .spa-form {
     opacity: 1; 
-}
-
-.button-submit {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--clr-gold);
-    color: #1b2745;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button-submit:hover {
-    background-color: #c4a55f;
-    transform: scale(1.1);
 }
