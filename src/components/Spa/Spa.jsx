@@ -1,4 +1,5 @@
 import "./Spa.css";
+import { Link } from 'react-router-dom'
 import SpaCard from "./SpaCards/SpaCard";
 
 function Spa() {
@@ -36,9 +37,10 @@ function Spa() {
             ></SpaCard>
           </div>
           <div className="spa-button">
-            <a href="/src/pages/SpaBooking/SpaBooking."><button className="button-submit">Book Your Treatment</button></a>
+            <Link to ="/spa-booking"><button className="button-submit">Book Your Treatment</button></Link>
           </div>
           </div>
+
         </div>
          <div className="spa-image">
             <img
