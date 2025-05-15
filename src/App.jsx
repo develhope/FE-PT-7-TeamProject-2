@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage/Homepage'
-import PremiumExperiences from './pages/PremiumExperiences/PremiumExperiences'
+import PremiumExperiences from './pages/PremiunExperiences/PremiumExperiences'
 import SpaBooking from './pages/SpaBooking/SpaBooking'
 // import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
 // import FaqPage from './pages/FooterLinks/Faq/Faq'

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./SpaBookingCard.css";
+import React, { useState } from 'react'
+import './SpaBookingCard.css'
 
 function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -56,4 +56,4 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
   );
 }
 
-export default SpaBookingCard;
+export default SpaBookingCard
