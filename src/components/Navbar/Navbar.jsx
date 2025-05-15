@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -17,7 +18,7 @@ function Navbar() {
             Rooms
           </a>
 
-          <a href="FE-PT-7-TeamProject-2\src\components\Spa\Spa.jsx">Spa</a>
+          <Link to="/spa-booking">Spa</Link>
 
           <a href="FE-PT-7-TeamProject-2\src\components\Casino\Casino.jsx">
             Casino

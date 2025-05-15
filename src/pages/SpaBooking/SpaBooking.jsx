@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import SpaBookingCard from "./SpaBookingComponents/SpaBookingCard";
-import OrderSummary from "../../components/Order summary/OrderSummary";
-import "./SpaBooking.css";
+import React, { useState } from 'react'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
+import SpaBookingCard from './SpaBookingComponents/SpaBookingCard'
+import OrderSummary from '../../components/Order summary/OrderSummary'
+import './SpaBooking.css'
 
 function SpaBooking() {
   const [orderItems, setOrderItems] = useState([]);
@@ -83,4 +83,4 @@ function SpaBooking() {
   );
 }
 
-export default SpaBooking;
+export default SpaBooking
