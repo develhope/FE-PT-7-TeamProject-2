@@ -1,0 +1,35 @@
+.spa-booking {
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    background-color: #0B1120;
+    color: #ffffff;
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.spa-booking-cards {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr); /* Adatta il numero di colonne */
+    gap: 30px; /* Spazio tra le card */
+    width: 100%; 
+    height: auto;/* Assicura che il contenitore occupi tutta la larghezza */
+    padding: 10px; /* Aggiunge spazio interno */
+    justify-items: center; /* Centra le card */
+}
+
+.spa-booking-head {
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.spa-card-content {
+    gap: 20px;
+}
+

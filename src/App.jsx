@@ -1,9 +1,11 @@
-import Homepage from "./pages/homepage/Homepage"
+//import Homepage from "./pages/homepage/Homepage"
+import SpaBooking from "./pages/SpaBooking/SpaBooking"
 
 const App = () => {
   return (
     <>
-      <Homepage></Homepage>
+       {/* <Homepage></Homepage>  */}
+      <SpaBooking></SpaBooking>
     </>
   )
 }

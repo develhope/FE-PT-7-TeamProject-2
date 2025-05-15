@@ -36,7 +36,7 @@ function Spa() {
             ></SpaCard>
           </div>
           <div className="spa-button">
-            <a href="/src/pages/SpaBooking/SpaBooking.jsx"><button className="button-submit">Book Your Treatment</button></a>
+            <a href="/src/pages/SpaBooking/SpaBooking."><button className="button-submit">Book Your Treatment</button></a>
           </div>
           </div>
         </div>

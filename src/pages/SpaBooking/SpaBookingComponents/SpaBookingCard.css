@@ -1,0 +1,150 @@
+.spa-booking-card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b2745;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--clr-gold);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    height: 100%; /* Occupa tutta l'altezza disponibile */
+    max-width: none; /* Rimuove il limite massimo di larghezza */
+    margin: 0 auto;
+    text-align: center; /* Centra il contenuto */
+    color: var(--clr-gold); /* Colore del testo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spa-booking-card:hover {
+    transform: scale(1.05); /* Effetto zoom al passaggio del mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+}
+
+.spa-booking-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.spa-booking-card-title {
+    font-size: 1.5rem; /* Dimensione del titolo */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.spa-booking-card-description {
+    font-size: 1rem; /* Dimensione del testo descrittivo */
+    margin-bottom: 15px;
+    color: #d1c4a9; /* Colore del testo descrittivo */
+}
+
+.spa-booking-card-images {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.spa-booking-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.spa-booking-card-images:hover img,
+.spa-booking-card-images:focus-within img,
+.spa-booking-card-images:active img {
+    transform: translateY(-120%);
+    filter: brightness(1.1); 
+}
+
+.spa-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    z-index: 1;
+    padding: 10px;
+    color: var(--clr-gold);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    gap: 15px;
+    padding: 10px;
+}
+
+.spa-form label,
+.spa-form p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--clr-gold);
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+.spa-form .spa-price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.spa-form input,
+.spa-form select {
+    max-width: 150px;
+    padding: 6px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: #152238;
+    color: #a4894e;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Assicura che gli input occupino tutta la larghezza disponibile */
+}
+
+.spa-form input:focus,
+.spa-form select:focus {
+    box-shadow: 0 0 5px var(--clr-gold);
+    outline: none;
+}
+
+.spa-booking-card:hover .spa-form {
+    opacity: 1; 
+}
+
+.button-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--clr-gold);
+    color: #1b2745;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-submit:hover {
+    background-color: #c4a55f;
+    transform: scale(1.1);
+}
