@@ -4,8 +4,6 @@
   --clr-dark-blue: #0B1120;
   --clr-blue: #1A1F2E;
   --clr-gold: #C4A55F;
-  /* --clr-footer-e-navbar : mo vediamo, un pelino + scuro o + chiaro
-  del resto body ; */
 }
 
 html {
@@ -59,7 +57,6 @@ p {
 }
 
 a {
-  font-weight: 500;
   text-decoration: none;
 }
 

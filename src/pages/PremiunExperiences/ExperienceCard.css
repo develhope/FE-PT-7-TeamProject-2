@@ -1,0 +1,76 @@
+.experiences-container-of-P-E {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.experience-card-of-P-E {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 520px;
+}
+
+.experience-card-of-P-E:hover {
+    transform: translateY(-25px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-image-of-P-E {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.experience-info-of-P-E {
+    background-color: #1A1F2E;
+    color: #C4A55F;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.experience-title-of-P-E {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.experience-description-of-P-E {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #a9a9a9;
+    text-align: left;
+}
+
+.price-title-of-P-E {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.price-container-of-P-E {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price-middle-line {
+    flex: 1;
+    height: 1px;
+    background-color: #C4A55F;
+}
+
+.the-price-of-the-experience {
+    font-size: 1.1rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
