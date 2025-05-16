@@ -32,7 +32,7 @@ function Footer() {
                 <FooterSocial/>
 
                 <div className="footer-lotus-las-vegas-links">
-                    <a href="#">FAQ</a>
+                    <Link to="/faq-footer">FAQ</Link>
                     <a href="#">Contact Us</a>
                     <a href="#">Newsletter</a>
                     <a href="#">Cancel Reservation</a>

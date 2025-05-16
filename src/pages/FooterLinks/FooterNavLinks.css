@@ -1,0 +1,19 @@
+.footer-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.footer-nav-links a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.4s ease;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.footer-nav-links a:hover {
+  color: rgba(255, 255, 255, 0.446);
+  border-color: #C4A55F;
+}
