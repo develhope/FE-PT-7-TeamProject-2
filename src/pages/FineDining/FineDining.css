@@ -1,0 +1,154 @@
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+    background: var(--clr-dark-blue);
+    padding: 4vw;
+}
+.menu-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3vw;
+}
+.menu-column {
+   display: flex;
+    gap: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-title {
+    color: var(--clr-gold);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
+    letter-spacing: 1px;
+
+}
+
+.menu-list {
+    width: 40vw;
+}
+
+.dessert-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dessert-box {
+    background: var(--clr-blue);
+    border-radius: 10px;
+    border: 1px solid var(--clr-gold);
+    padding: 32px 32px 24px 32px;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dessert-title {
+    color: var(--clr-gold);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
+    letter-spacing: 1px;
+}
+
+.dessert-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2vw;
+}
+
+.dessert-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-gold);
+    padding: 1vw 0;
+    min-height: 6vw;
+}
+
+.dessert-col {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    gap: 16px;
+}
+
+.dessert-img {
+    width: 5vw;
+    height: 4vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--clr-gold);
+    flex-shrink: 0;
+}
+
+.dessert-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--clr-gold);
+    margin-bottom: 2px;
+    display: block;
+}
+
+.dessert-desc {
+    font-size: 0.97rem;
+    color: #fff;
+    opacity: 0.85;
+}
+
+.dessert-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--clr-gold);
+    margin-left: 18px;
+    min-width: 2vw;
+    text-align: right;
+}
+.course-card:hover,
+.course-card:active {
+    background: var(--clr-gold, #d1b46c);
+}
+
+.course-card:hover .dish-name,
+.course-card:active .dish-name,
+.course-card:hover .dish-price,
+.course-card:active .dish-price {
+    color: var(--clr-blue) ;
+    background: transparent;
+}
+
+.course-card:hover .dish-description,
+.course-card:active .dish-description {
+    color: var(--clr-blue);
+    opacity: 0.95;
+}
+
+.dessert {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dessert:hover,
+.dessert:active {
+    background: var(--clr-gold,);
+}
+
+.dessert:hover .dessert-name,
+.dessert:active .dessert-name,
+.dessert:hover .dessert-price,
+.dessert:active .dessert-price {
+    color: var(--clr-blue) ;
+    background: transparent;
+}
+
+.dessert:hover .dessert-desc,
+.dessert:active .dessert-desc {
+    color: var(--clr-blue);
+    opacity: 0.95;
+}

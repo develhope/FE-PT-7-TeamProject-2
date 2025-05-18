@@ -1,0 +1,62 @@
+.course-card {
+    display: flex;
+    align-items: center;
+    background: var(--clr-blue);
+    margin-bottom: 14px;
+    padding: 12px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-left: 1px solid var(--clr-gold);
+    transition: background 0.2s, border 0.2s;
+    position: relative;
+    min-height: 4vw;
+    border-bottom: 2px solid var(--clr-gold);
+}
+
+.dish-image {
+    width: 5vw;
+    height: 4vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1vw;
+    border: 2px solid var(--clr-gold);
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.dish-details {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dish-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--clr-gold);
+    margin: 0 0 2px 0;
+}
+
+
+.dish-description {
+    font-size: 0.97rem;
+    color: #fff;
+    margin: 0;
+    opacity: 0.85;
+}
+
+
+.dish-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--clr-gold);
+    margin-left: 18px;
+    min-width: 40px;
+    text-align: right;
+}
+
+.course-card {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s, border 0.2s;
+}
