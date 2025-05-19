@@ -1,0 +1,17 @@
+.casino-details-events-section {
+  padding: 60px 20px;
+  background-color: #030518;
+  text-align: center;
+}
+.casino-details-h2-upcoming-events {
+  color: #C4A55F;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.casino-details-event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
