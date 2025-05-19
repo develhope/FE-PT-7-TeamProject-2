@@ -1,9 +1,10 @@
 import FooterSocial from './FooterSocial/FooterSocial'
-// import css quando lo farò... :( #AIUTO VOGLIO CREPARE :((((
+import './Footer.css'
+import { Link } from 'react-router-dom'
 
 
+function Footer() {
 
-const Footer = () => {
     return (
         <>
             <div className="footer-lotus-las-vegas">
@@ -28,13 +29,14 @@ const Footer = () => {
                 </div>
 
 
-                <FooterSocial></FooterSocial>
+                <FooterSocial/>
 
                 <div className="footer-lotus-las-vegas-links">
                     <a href="#">FAQ</a>
                     <a href="#">Contact Us</a>
                     <a href="#">Newsletter</a>
                     <a href="#">Cancel Reservation</a>
+                    <Link to="/premium-experiences">Premium Experiences</Link>
                 </div>
 
                 <div className="footer-divider"></div>
@@ -49,6 +51,8 @@ const Footer = () => {
 
             </div>
         </>
+
+
     )
 }
 

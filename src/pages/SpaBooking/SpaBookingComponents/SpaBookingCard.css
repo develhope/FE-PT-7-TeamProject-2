@@ -1,0 +1,129 @@
+.spa-booking-card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-blue);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--clr-gold);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%; 
+    max-width: none; 
+    margin: 0 auto;
+    text-align: center; 
+    color: var(--clr-gold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.spa-booking-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.spa-booking-card-title {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.spa-booking-card-description {
+    font-size: 1rem; 
+    margin-bottom: 15px;
+    color: var(--clr-gold);
+}
+
+.spa-booking-card-images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.spa-booking-card-image {
+    width: 100%;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.spa-booking-card-images:hover img,
+.spa-booking-card-images:focus-within img,
+.spa-booking-card-images:active img {
+    transform: translateY(-120%);
+    filter: brightness(1.1); 
+}
+
+.spa-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    z-index: 2;
+    color: var(--clr-gold);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    gap: 15px;
+    border: var(--clr-gold) 1px solid;
+}
+
+.spa-form label,
+.spa-form p{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--clr-gold);
+    text-align:center; 
+}
+
+.spa-form .spa-price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.spa-form input,
+.spa-form select {
+    max-width: 150px;
+    padding: 6px;
+    border: 1px solid #C4A55F;
+    border-radius: 8px;
+    background-color: var(--clr-dark-blue);
+    color: #a4894e;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.spa-form input:focus,
+.spa-form select:focus {
+    box-shadow: 0 0 5px var(--clr-gold);
+    outline: none;
+}
+
+.spa-booking-card:hover .spa-form {
+    opacity: 1; 
+}

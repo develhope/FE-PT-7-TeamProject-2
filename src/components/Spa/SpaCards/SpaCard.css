@@ -1,0 +1,40 @@
+.spa-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #13385B;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 104px;
+    width: 278px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.spa-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.spa-card-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.spa-card:hover .spa-card-image {
+    opacity: 1;
+}
+.spa-card-title {
+    position: relative;
+    z-index: 2;
+}
+.spa-card-description {
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+}
