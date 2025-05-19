@@ -6,9 +6,9 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-logo-and-title">
-          <h1> Lotus Las Vegas</h1>
+          <Link to="/"><h1> Lotus Las Vegas</h1></Link>
           <img
-            className="logo-image"
+            className="navbar-logo-image"
             src="/logo-removebg-preview.png"
             alt="lotus-logo"
           />

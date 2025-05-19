@@ -19,7 +19,6 @@ function SpaBooking() {
 
   const handleGuestSubmit = (e) => {
     e.preventDefault();
-    // ...handle guest info submit logic...
   };
 
   return (
@@ -29,7 +28,7 @@ function SpaBooking() {
         <div className="spa-booking-head">
           <h1>Saphire Spa Booking</h1>
           <img
-            className="logo-image"
+            className="spa-logo-image"
             src="/logo-removebg-preview.png"
             alt="Lotus logo"
           />

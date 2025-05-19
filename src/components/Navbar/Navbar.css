@@ -1,60 +1,43 @@
 .navbar {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-blue);
     padding: 0.7em 4vw;
     border-bottom: var(--clr-gold) 1px solid;
-    min-width: 0;
-    box-sizing: border-box;
 }
 
 .navbar-logo-and-title {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-    min-width: 0;
-    flex-shrink: 1;
+    gap: 0.7em;
 }
 
 .navbar-logo-and-title h1 {
-    font-size: clamp(1rem, 4vw, 2rem);
-    margin-left: 0.5em;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    margin-left: 0.7em;
     color: var(--clr-gold);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
 }
 
-.logo-image {
+.navbar-logo-image {
     display: flex;
     align-items: center;
-    width: clamp(28px, 8vw, 48px);
-    height: clamp(28px, 8vw, 48px);
-    min-width: 28px;
-    min-height: 28px;
+    width: clamp(36px, 6vw, 60px);
+    height: clamp(36px, 6vw, 60px);
 }
 
 .navbar-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     align-items: center;
-    justify-content: flex-end;
-    min-width: 0;
-    flex-shrink: 1;
 }
 
 .navbar-links a {
     color: #f5f5f5;
     text-decoration: none;
-    font-size: clamp(0.9rem, 3vw, 1em);
+    font-size: 1em;
     transition: color 0.3s ease;
-    padding: 0.2em 0.5em;
-    min-width: 0;
-    word-break: break-word;
+    gap: 2em;
 }
 
 .navbar-links :hover {

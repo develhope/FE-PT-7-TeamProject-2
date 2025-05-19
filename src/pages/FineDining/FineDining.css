@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3vw;
     background: var(--clr-dark-blue);
     padding: 4vw;
 }
@@ -11,6 +10,12 @@
     align-items: flex-start;
     justify-content: center;
     margin-top: 3vw;
+    font-size: 2vw;
+}
+.dining-logo{
+    display: flex;
+    align-items: flex-start;
+    width: 5vw;
 }
 .menu-column {
    display: flex;
@@ -30,7 +35,7 @@
 }
 
 .menu-list {
-    width: 40vw;
+    max-width: 40vw;
 }
 
 .dessert-section {
@@ -42,6 +47,8 @@
 .dessert-box {
     background: var(--clr-blue);
     border-radius: 10px;
+
+
     border: 1px solid var(--clr-gold);
     padding: 32px 32px 24px 32px;
     width: 90vw;
@@ -81,10 +88,10 @@
 
 .dessert-img {
     width: 5vw;
-    height: 4vw;
+    height: 5vw;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--clr-gold);
+    border: 2px solid var(--clr-dark-blue);
     flex-shrink: 0;
 }
 

@@ -9,7 +9,6 @@
     flex-direction: column;
     gap: 15px;
     max-width: 20%;
-    margin-top: 30px;
 }
 
 .spa-guest-form {
@@ -20,23 +19,9 @@
 
 .spa-guest-form input {
     padding: 6px;
-    border: 1px solid #C4A55F;
+    border: 1px solid var(--clr-gold);
     border-radius: 8px;
     background-color: var(--clr-dark-blue);
-    color: #a4894e;
+    color: var(--clr-gold);
 }
 
-.button-submit {
-    background: var(--clr-gold);
-    color: var(--clr-dark-blue);
-    border: none;
-    border-radius: 8px;
-    padding: 8px 0;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background 0.2s;
-}
-.button-submit:hover {
-    background: #bfa76a;
-}

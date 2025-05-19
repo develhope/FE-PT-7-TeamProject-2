@@ -69,7 +69,7 @@ function FineDining() {
     },
     {
       imgSrc: "/public/Menù & carousel img/menu_di_lusso/branzino.jpeg",
-      title: "Wild Sea Bass in Salt Crust with Champagne Sauce",
+      title: "Wild Sea Bass in Salt Crust with Champagne.",
       description:
         "Whole sea bass baked in a salt crust, served with Champagne reduction.",
       price: 38,
@@ -141,8 +141,9 @@ function FineDining() {
   return (
     <>
       <Navbar />
-      <div>
-        <h1 className="menu-header">Fine Dining</h1>
+      <div className="menu-header">
+        <h1>Lotus Menù</h1>
+        <img src="/public/logo-removebg-preview.png" alt="lotus logo" className="dining-logo" />
       </div>
       <div className="menu-container">
         <div className="menu-column">
