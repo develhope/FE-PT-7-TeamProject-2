@@ -11,7 +11,7 @@ function NewsletterPopup() {
       const timer = setTimeout(() => {
         setShowPopup(true);
         localStorage.setItem("popupShown", "true");
-      }, 4000);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
