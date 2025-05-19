@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import './ContactUs.css'
 import FooterNavLinks from '../FooterLinks'
-import Navbar from './../../../components/Navbar/Navbar'
-import Footer from '../../../components/Footer/Footer'
 
 function ContactFooter() {
     const [formData, setFormData] = useState({
@@ -22,48 +20,43 @@ function ContactFooter() {
     }
 
     return (
-        <>
-            <Navbar />
-            <div className="footer-contact-form-layout-container">
-                <FooterNavLinks />
+        <div className="footer-contact-form-layout-container">
+            <FooterNavLinks />
 
-                <form
-                    className="footer-form-with-name-email-message"
-                    onSubmit={handleSubmit}
-                >
-                    <label labelFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
+            <form
+                className="footer-form-with-name-email-message"
+                onSubmit={handleSubmit}
+            >
+                <label htmlFor="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                />
 
-                    <label labelFor="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
+                <label htmlFor="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
 
-                    <label labelFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        rows="6"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
+                <label htmlFor="message">Message</label>
+                <textarea
+                    id="message"
+                    rows="6"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                />
 
-                    <button type="submit" className='button-submit'>Send Message</button>
-                </form>
-
-            </div>
-            <Footer />
-        </>
+                <button type="submit" className="button-submit">Send Message</button>
+            </form>
+        </div>
     )
 }
 

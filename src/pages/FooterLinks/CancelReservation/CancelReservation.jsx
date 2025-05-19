@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './../ContactUs/ContactUs.css'
 import FooterNavLinks from '../FooterLinks'
-import Footer from '../../../components/Footer/Footer'
-import Navbar from './../../../components/Navbar/Navbar'
+
 
 function CancelReservation() {
     const [formData, setFormData] = useState({
@@ -22,14 +21,13 @@ function CancelReservation() {
 
     return (
         <>
-        <Navbar/>
             <div className="footer-contact-form-layout-container">
                 <FooterNavLinks />
                 <form
                     className="footer-form-with-name-email-message"
                     onSubmit={handleSubmit}
                 >
-                    <label labelFor="reservationNumber">Reservation Number</label>
+                    <label htmlFor="reservationNumber">Reservation Number</label>
                     <input
                         type="text"
                         id="reservationNumber"
@@ -39,7 +37,7 @@ function CancelReservation() {
                         required
                     />
 
-                    <label labelFor="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         id="email"
@@ -53,8 +51,6 @@ function CancelReservation() {
                     </button>
                 </form>
             </div>
-
-            <Footer />
         </>
     )
 }
