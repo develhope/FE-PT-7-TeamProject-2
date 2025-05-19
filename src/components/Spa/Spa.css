@@ -1,0 +1,44 @@
+.spa-section {
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #021226;
+    color: #021024;
+    color: #ffffff;
+    font-family: 'inter', sans-serif;
+    
+}
+
+.spa-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.spa-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.spa-card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+
+.spa-image {
+    flex: 1;
+    text-align: right;
+       max-width: 93%;
+    margin-top: 30px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spa-button {
+    margin-top: 20px;
+}
