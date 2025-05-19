@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
+
 .about-us {
   padding: 60px 20px;
   background-color: var(--clr-dark-blue);
   color: white;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Playfair Display', serif;
 }
 
 .text-and-image {
@@ -45,7 +46,7 @@
 
 .image-content {
   flex: 1;
-  max-width: 300px;
+  max-width: 00px;
 }
 
 .image-content img {
