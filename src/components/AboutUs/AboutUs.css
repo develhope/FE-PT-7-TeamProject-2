@@ -1,0 +1,55 @@
+.about-us {
+  padding: 60px 20px;
+  background-color: var(--clr-dark-blue);
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.text-and-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.text-side {
+  flex: 1;
+  text-align: left;
+}
+
+.text-side h1 {
+  font-size: 2.5rem;
+  color: var(--clr-gold);
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.reviews a {
+  color: var(--clr-gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reviews a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 300px;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
