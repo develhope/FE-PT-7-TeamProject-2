@@ -1,0 +1,7 @@
+.wcc-casino-section {
+  background-color: var(--wcc-primary-bg);
+  color: var(--wcc-text-main);
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
