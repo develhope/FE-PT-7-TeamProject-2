@@ -11,7 +11,7 @@ function Homepage() {
     <>
       <Navbar />
       <Hero />
-    {/*<Rooms />*/}
+      {/*<Rooms />*/}
       <Spa />
       {/* <Casino /> */}
       {/* <AboutUs /> */}
@@ -20,4 +20,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Homepage
