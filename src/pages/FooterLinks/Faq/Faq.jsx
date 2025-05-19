@@ -2,6 +2,7 @@ import { useState } from 'react'
 import FooterNavLinks from './../FooterLinks'
 import './Faq.css'
 import Footer from '../../../components/Footer/Footer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const faqs = [
     {
@@ -35,6 +36,7 @@ function FaqPage() {
 
     return (
         <>
+            <Navbar/>
             <div className="footer-faq-section">
                 <FooterNavLinks />
                 <div className="faq-question-and-answer-container">
