@@ -1,0 +1,17 @@
+.wcc-casino-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 16, 49, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wcc-casino-image:hover .wcc-casino-overlay {
+  opacity: 1;
+}
