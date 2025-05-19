@@ -36,7 +36,6 @@ function Footer() {
                     <Link to="/contact-us">Contact Us</Link>
                     <a href="#">Newsletter</a>
                     <Link to='/cancel-reservation'>Cancel Reservation</Link>
-                    <Link to="/premium-experiences">Premium Experiences</Link>
                 </div>
 
                 <div className="footer-divider"></div>
