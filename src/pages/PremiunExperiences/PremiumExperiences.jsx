@@ -2,7 +2,7 @@ import './PremiumExperiences.css'
 import ExperienceCard from './ExperienceCard'
 import ModalReservation from './ModalReservatio'
 import { useState } from 'react'
-import Footer from './../../components/Footer/Footer'
+
 
 const experiences = [
   {
@@ -67,8 +67,6 @@ function PremiumExperiences() {
 
         {showModal && <ModalReservation onClose={() => setShowModal(false)} />}
       </div>
-
-      <Footer />
     </>
   )
 }

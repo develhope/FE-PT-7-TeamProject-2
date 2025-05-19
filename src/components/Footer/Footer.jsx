@@ -29,14 +29,13 @@ function Footer() {
                 </div>
 
 
-                <FooterSocial/>
+                <FooterSocial />
 
                 <div className="footer-lotus-las-vegas-links">
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
+                    <Link to="/faq-footer">FAQ</Link>
+                    <Link to="/contact-us">Contact Us</Link>
                     <a href="#">Newsletter</a>
-                    <a href="#">Cancel Reservation</a>
-                    <Link to="/premium-experiences">Premium Experiences</Link>
+                    <Link to='/cancel-reservation'>Cancel Reservation</Link>
                 </div>
 
                 <div className="footer-divider"></div>
