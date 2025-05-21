@@ -1,0 +1,27 @@
+.spa-guest-info {
+    background-color: var(--clr-blue);
+    padding: 30px;
+    border: 1px solid var(--clr-gold);
+    border-radius: 8px;
+    margin: 0 auto 40px;
+    color: var(--clr-gold);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 20%;
+}
+
+.spa-guest-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spa-guest-form input {
+    padding: 6px;
+    border: 1px solid var(--clr-gold);
+    border-radius: 8px;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-gold);
+}
+
