@@ -1,5 +1,5 @@
-import React from "react";
-import "./OrderSummary.css";
+import React from 'react'
+import './OrderSummary.css'
 
 function OrderSummary({ items, onRemove }) {
   const total = items.reduce((sum, item) => sum + item.price, 0);
@@ -32,4 +32,4 @@ function OrderSummary({ items, onRemove }) {
   );
 }
 
-export default OrderSummary;
+export default OrderSummary
