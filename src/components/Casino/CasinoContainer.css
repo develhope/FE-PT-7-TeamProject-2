@@ -5,4 +5,5 @@
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+  margin-bottom: 40px; /* aggiungi spazio sotto la griglia */
 }
