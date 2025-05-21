@@ -28,7 +28,7 @@ function Navbar() {
             About Us
           </a>
           <a href="FE-PT-7-TeamProject-2\src\components\Booking\Booking.jsx">
-            <button className="button-link">Book Now</button>
+            <button className="button-submit">Book Now</button>
           </a>
         </div>
       </div>
