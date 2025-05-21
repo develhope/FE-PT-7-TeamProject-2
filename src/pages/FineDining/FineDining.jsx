@@ -1,5 +1,4 @@
 import "./FineDining.css";
-import Navbar from "../../components/Navbar/Navbar";
 import Courses from "./Courses/Courses";
 import { useState } from "react";
 import GuestInfo from "../GuestInfo/GuestInfo";
@@ -140,7 +139,6 @@ function FineDining() {
 
   return (
     <>
-      <Navbar />
       <div className="menu-header">
         <h1>Lotus Menù</h1>
         <img src="/public/logo-removebg-preview.png" alt="lotus logo" className="dining-logo" />

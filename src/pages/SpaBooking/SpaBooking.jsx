@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import SpaBookingCard from './SpaBookingComponents/SpaBookingCard'
 import OrderSummary from '../Order summary/OrderSummary'
 import GuestInfo from '../GuestInfo/GuestInfo'
@@ -23,7 +21,6 @@ function SpaBooking() {
 
   return (
     <>
-      <Navbar />
       <div className="spa-booking">
         <div className="spa-booking-head">
           <h1>Saphire Spa Booking</h1>
@@ -75,7 +72,6 @@ function SpaBooking() {
       </div>
 
       <OrderSummary items={orderItems} onRemove={handleRemoveItem} />
-      <Footer />
     </>
   );
 }

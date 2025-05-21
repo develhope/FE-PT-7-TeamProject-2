@@ -5,19 +5,16 @@ import Spa from '../../components/Spa/Spa'
 import ExploreOurOfferings from '../../components/Offerings/ExploreOurOfferings'
 import Casino from '../../components/Casino/Casino'
 // import AboutUs from '../../components/AboutUs/AboutUs'
-import Footer from '../../components/Footer/Footer'
 
 function Homepage() {
   return (
     <>
-      <Navbar />
       <Hero />
     {/*<Rooms />*/}
       <Spa />
       <ExploreOurOfferings />
-     <Casino />
+      <Casino />
       {/* <AboutUs /> */}
-      <Footer />
     </>
   )
 }

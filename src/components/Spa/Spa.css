@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: stretch;
     padding: 40px 2vw;
     background: var(--clr-dark-blue);
     color: #fff;
@@ -25,7 +25,10 @@
     align-items: flex-start;
     box-sizing: border-box;
 }
-
+.spa-content,
+.spa-image-wrapper {
+    height: 100%;
+}
 .spa-title {
     font-size: 2.7rem;
     font-weight: bold;
@@ -48,7 +51,7 @@
 .spa-card-section {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 1fr));
-    gap: 16px;
+    gap: 24px;
     width: 100%;
     text-align: center;
     box-sizing: border-box;
@@ -57,7 +60,7 @@
 
 .spa-image-wrapper {
     display: flex;
-    align-items: flex-end ;
+    align-items: center ;
     justify-content: center;
     box-sizing: border-box;
     min-width: 35vw;

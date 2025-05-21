@@ -17,13 +17,8 @@ function Navbar() {
           <a href="FE-PT-7-TeamProject-2/src/components/Rooms/Rooms.jsx">
             Rooms
           </a>
-
           <Link to="/spa-booking">Spa</Link>
-
-          <a href="FE-PT-7-TeamProject-2\src\components\Casino\Casino.jsx">
-            Casino
-          </a>
-
+          <a href="/casino-details"> Casino</a>
           <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
             About Us
           </a>
