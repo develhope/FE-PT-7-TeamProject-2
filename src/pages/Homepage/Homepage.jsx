@@ -9,7 +9,7 @@ function Homepage() {
   return (
     <>
       <Hero />
-    {/*<Rooms />*/}
+      {/*<Rooms />*/}
       <Spa />
       <ExploreOurOfferings />
       <Casino />
