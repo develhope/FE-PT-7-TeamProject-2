@@ -4,6 +4,8 @@ import PremiumExperiences from './pages/PremiunExperiences/PremiumExperiences'
 import FaqPage from './pages/FooterLinks/Faq/Faq'
 import SpaBooking from './pages/SpaBooking/SpaBooking'
 import CasinoDetailsMain from './pages/LotusCasinoDetails/CasinoDetailsMain'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 // import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
 import ContactUs from './pages/FooterLinks/ContactUs/ContactUs'
@@ -12,6 +14,8 @@ import CancelReservation from './pages/FooterLinks/CancelReservation/CancelReser
 
 function App() {
   return (
+    <>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/spa-booking" element={<SpaBooking />} />
@@ -20,6 +24,8 @@ function App() {
       {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
       {/* <Route path="/faq-footer" element={<FaqPage />} /> */}
     </Routes>
+    <Footer />
+    </>
   )
 }
 
