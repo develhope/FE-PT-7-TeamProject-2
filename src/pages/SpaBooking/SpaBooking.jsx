@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 import SpaBookingCard from './SpaBookingComponents/SpaBookingCard'
-import OrderSummary from '../../components/Order summary/OrderSummary'
+import OrderSummary from '../Order summary/OrderSummary'
+import GuestInfo from '../GuestInfo/GuestInfo'
 import './SpaBooking.css'
 
 function SpaBooking() {
@@ -16,14 +15,17 @@ function SpaBooking() {
     setOrderItems((prevItems) => prevItems.filter((_, i) => i !== index));
   };
 
+  const handleGuestSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
-      <Navbar />
       <div className="spa-booking">
         <div className="spa-booking-head">
           <h1>Saphire Spa Booking</h1>
           <img
-            className="logo-image"
+            className="spa-logo-image"
             src="/logo-removebg-preview.png"
             alt="Lotus logo"
           />
@@ -66,19 +68,10 @@ function SpaBooking() {
             />
           </div>
         </div>
-        <div className="spa-guest-info">
-          <h2>Guest Information</h2>
-          <form className="spa-guest-form">
-            <input type="text" placeholder="Name" required />
-            <input type="text" placeholder="Surname" required />
-            <input type="number" placeholder="Room Number" required />
-            <button className="button-submit" type="submit">Confirm Booking</button>
-          </form>
-        </div>
+        <GuestInfo onSubmit={handleGuestSubmit} />
       </div>
 
       <OrderSummary items={orderItems} onRemove={handleRemoveItem} />
-      <Footer />
     </>
   );
 }
