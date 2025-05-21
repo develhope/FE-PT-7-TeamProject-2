@@ -34,7 +34,7 @@ function Footer() {
                 <div className="footer-lotus-las-vegas-links">
                     <Link to="/faq-footer">FAQ</Link>
                     <Link to="/contact-us">Contact Us</Link>
-                    <a href="#">Newsletter</a>
+                    <Link to="/newsletter">Newsletter</Link>
                     <Link to='/cancel-reservation'>Cancel Reservation</Link>
                 </div>
 
