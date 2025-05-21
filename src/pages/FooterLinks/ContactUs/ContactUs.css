@@ -19,7 +19,8 @@
 }
 
 .footer-form-with-name-email-message input,
-.footer-form-with-name-email-message textarea {
+.footer-form-with-name-email-message textarea,
+.footer-form-with-name-email-message input.footer-email {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #1f2937;
@@ -27,3 +28,4 @@
     color: white;
     resize: none;
 }
+
