@@ -1,0 +1,27 @@
+/* Inserisci in: src/components/LotusCasinoDetails/EventCard.css */
+.casino-details-event-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 300px;
+  text-align: left;
+  color: #fff;
+  border-left: 3px solid #FFD700;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.casino-details-event-card:hover {
+  transform: translateY(-10px);
+}
+.casino-details-high-poker,
+.casino-details-h3-roulette-royale,
+.casino-details-h3-slots-showdown {
+  color: #C4A55F;
+  font-size: 1.5em;
+}
+.casino-details-p-high,
+.casino-details-p-roulette-more-info,
+.casino-details-p-slots-more-info {
+  color: #fff;
+}

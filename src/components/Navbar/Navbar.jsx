@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -5,9 +6,9 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-logo-and-title">
-          <h1> Lotus Las Vegas</h1>
+          <Link to="/"><h1> Lotus Las Vegas</h1></Link>
           <img
-            className="logo-image"
+            className="navbar-logo-image"
             src="/logo-removebg-preview.png"
             alt="lotus-logo"
           />
@@ -16,19 +17,12 @@ function Navbar() {
           <a href="FE-PT-7-TeamProject-2/src/components/Rooms/Rooms.jsx">
             Rooms
           </a>
-
-          <a href="FE-PT-7-TeamProject-2\src\components\Spa\Spa.jsx">Spa</a>
-
-          <a href="FE-PT-7-TeamProject-2\src\components\Casino\Casino.jsx">
-            Casino
-          </a>
-
+          <Link to="/spa-booking">Spa</Link>
+          <a href="/casino-details"> Casino</a>
           <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
             About Us
           </a>
-          <a href="FE-PT-7-TeamProject-2\src\components\Booking\Booking.jsx">
-            <button className="button-link">Book Now</button>
-          </a>
+           <Link to='/lotus-reservation'> <button className="button-submit">Book Now</button></Link>
         </div>
       </div>
     </>

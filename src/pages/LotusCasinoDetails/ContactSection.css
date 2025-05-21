@@ -1,0 +1,29 @@
+.casino-details-contact-section {
+  padding: 60px 20px 100px;
+  text-align: center;
+}
+.casino-details-h2-contatc {
+  color: #C4A55F;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.casino-details-book-your-experience {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.casino-details-button-contact {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #C4A55F;
+  color: #0B1120;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+.casino-details-button-contact:hover {
+  background-color: #0B1120;
+  color: #C4A55F;
+}

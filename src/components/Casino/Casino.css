@@ -1,0 +1,34 @@
+.wcc-casino-section {
+  background-color: var(--wcc-primary-bg);
+  color: var(--wcc-text-main);
+  padding: 60px 20px 80px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  min-height: 520px; /* più compatto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wcc-central-button-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-link {
+  background: #C4A55F;
+  color: #181F2A;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.button-link:hover {
+  background: #b9936c;
+}

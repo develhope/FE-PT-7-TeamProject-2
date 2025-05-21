@@ -1,0 +1,9 @@
+.wcc-casino-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 40px; /* aggiungi spazio sotto la griglia */
+}
