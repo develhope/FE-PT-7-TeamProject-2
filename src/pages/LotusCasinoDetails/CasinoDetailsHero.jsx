@@ -1,4 +1,3 @@
-// Inserisci in: src/components/LotusCasinoDetails/CasinoDetailsHero.jsx
 import React from "react";
 import "./CasinoDetailsHero.css";
 
