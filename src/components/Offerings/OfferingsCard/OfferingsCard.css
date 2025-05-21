@@ -18,6 +18,7 @@
     transition: transform 0.5s, box-shadow 0.5s;
     width: 320px;
     cursor: pointer;
+    
 }
 
 .offerings-card:hover {

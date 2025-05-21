@@ -22,9 +22,7 @@ function Navbar() {
           <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
             About Us
           </a>
-          <a href="FE-PT-7-TeamProject-2\src\components\Booking\Booking.jsx">
-            <button className="button-submit">Book Now</button>
-          </a>
+           <Link to='/lotus-reservation'> <button className="button-submit">Book Now</button></Link>
         </div>
       </div>
     </>

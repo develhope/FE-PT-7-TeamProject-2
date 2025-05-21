@@ -64,14 +64,18 @@ function ExploreOurOfferings() {
     <>
       <section className="our-offerings">
         <h1 className="offerings-header">Explore Our Offerings</h1>
-        <div className="offerings-carousel">
+        <div className="carousel">
+            <div className="offerings-carousel">
+            
           <button className="carousel-btn" onClick={prevCards}>&lt;</button>
-          <div className="carousel-card-wrapper" style={{ display: "flex", gap: "2vw" }}>
+          
+          <div className="carousel-card-wrapper">
             {cardsToShow.map((card, idx) => (
               <OfferingsCard key={idx + card.title} {...card} />
             ))}
-          </div>
+            </div>
           <button className="carousel-btn" onClick={nextCards}>&gt;</button>
+        </div>
         </div>
       </section>
     </>

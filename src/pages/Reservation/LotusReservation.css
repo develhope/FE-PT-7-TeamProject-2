@@ -1,0 +1,102 @@
+.reservation {
+    background: var(--clr-blue);
+    border-radius: 10px;
+    padding: 24px 20px 32px 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    color: var(--clr-gold);
+    box-shadow: 0 2px 12px #000a;
+}
+
+.reserv-header {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--clr-gold);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.reserv-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: visible;
+}
+
+.reserv-row {
+    display: flex;
+    gap: 16px;
+}
+
+.reserv-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reserv-col-full {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: visible;
+}
+
+.reserv-form label {
+    font-size: 0.97rem;
+    color: var(--clr-gold);
+    margin-bottom: 2px;
+}
+
+.reserv-form input,
+.reserv-form select,
+.reserv-form textarea {
+    background: #232b39;
+    border: 1px solid var(--clr-gold);
+    border-radius: 5px;
+    color: var(--clr-gold);
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 2px;
+}
+
+.reserv-form input:focus,
+.reserv-form select:focus,
+.reserv-form textarea:focus {
+    border-color: var(--clr-gold);
+}
+
+.room-type {
+    gap: 2vw;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.reserv-form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.total-price {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--clr-gold);
+    font-weight: 600;
+}
+
+.total-price span {
+    color: #ffe08a;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .reserv-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
