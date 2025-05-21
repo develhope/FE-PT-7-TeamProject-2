@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ThingsToDo.css";
+import "./ThingsToDoCard.css";
 
 const CardThingsToDo = ({ id, title, description, details, price, images, reverse }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -32,7 +32,7 @@ const CardThingsToDo = ({ id, title, description, details, price, images, revers
           }`}
         >
           <p className="price">{price}</p>
-          <button>Book</button>
+          <button className="book-btn">Book</button>
         </div>
       </div>
     </div>
