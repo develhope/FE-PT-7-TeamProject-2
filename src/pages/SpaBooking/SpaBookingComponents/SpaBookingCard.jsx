@@ -22,7 +22,7 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
           <form className="spa-booking-form">
             <div>
               <label htmlFor="date">Date<br/></label>
-              <input type="date" id="form-date" />
+              <input type="date" id="form-date" required/>
             </div>
             
             <div>
@@ -36,7 +36,7 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
             
             <div>
               <label htmlFor="person-number">How Many People<br/></label>
-              <input type="number" id="person-number" min={1} defaultValue={1} />
+              <input type="number" id="person-number" min={1} max={4} defaultValue={1} required />
             </div>
             
             <div>
