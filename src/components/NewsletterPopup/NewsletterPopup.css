@@ -71,10 +71,12 @@ body {
   font-size: 1em;
   background-color: #C4A55F;
   color: #ffffff;
-  caret-color: #ffffff;
 }
 
-
+.popup-box input[type="email"]::placeholder{
+  color: #ffffff;
+  opacity: 1;
+}
 /* Bottone submit */
 .popup-box input[type="submit"] {
   width: 100%;
