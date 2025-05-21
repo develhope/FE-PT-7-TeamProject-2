@@ -10,6 +10,7 @@ import CancelReservation from './pages/FooterLinks/CancelReservation/CancelReser
 import Navbar from './components/Navbar/Navbar'
 import LotusReservation from './pages/Reservation/LotusReservation'
 import FineDining from './pages/FineDining/FineDining'
+import FaqPage from './pages/FooterLinks/Faq/Faq'
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Route path="/fine-dining" element={<FineDining />} />
       
       {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
-       <Route path="/faq-footer" element={<FaqPage />} /> 
+       <Route path="/faq-page" element={<FaqPage />} /> 
     </Routes>
     <Footer />
     </>
