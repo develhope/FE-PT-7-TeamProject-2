@@ -141,7 +141,7 @@ function FineDining() {
     <>
       <div className="menu-header">
         <h1>Lotus Menù</h1>
-        <img src="/public/logo-removebg-preview.png" alt="lotus logo" className="dining-logo" />
+        <img src="/logo-removebg-preview.png" alt="lotus logo" className="dining-logo" />
       </div>
       <div className="menu-container">
         <div className="menu-column">
