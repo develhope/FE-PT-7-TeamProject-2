@@ -4,6 +4,7 @@ import PremiumExperiences from "./pages/PremiunExperiences/PremiumExperiences";
 import SpaBooking from "./pages/SpaBooking/SpaBooking";
 import CasinoDetailsMain from "./pages/LotusCasinoDetails/CasinoDetailsMain";
 import Footer from "./components/Footer/Footer";
+
 // import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
 import ContactUs from "./pages/FooterLinks/ContactUs/ContactUs";
 import CancelReservation from "./pages/FooterLinks/CancelReservation/CancelReservation";

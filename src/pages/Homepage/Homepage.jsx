@@ -6,6 +6,7 @@ import ExploreOurOfferings from "../../components/Offerings/ExploreOurOfferings"
 import Casino from "../../components/Casino/Casino";
 import AboutUs from "../../components/AboutUs/AboutUs";
 
+
 function Homepage() {
   return (
     <>
