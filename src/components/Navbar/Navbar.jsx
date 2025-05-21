@@ -18,7 +18,7 @@ function Navbar() {
             Rooms
           </a>
           <Link to="/spa-booking">Spa</Link>
-          <a href="/casino-details"> Casino</a>
+          <Link to="/casino-details-main"> Casino</Link>
           <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
             About Us
           </a>
