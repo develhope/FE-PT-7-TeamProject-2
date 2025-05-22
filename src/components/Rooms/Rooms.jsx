@@ -60,7 +60,7 @@ const stanze = [
 
 function Rooms() {
   return (
-    <div className="luxury-section">
+    <div className="luxury-section" id="rooms">
       <h1>Luxury Accommodation</h1>
       <div className="rooms-grid">
         {stanze.map((stanza, i) => (
