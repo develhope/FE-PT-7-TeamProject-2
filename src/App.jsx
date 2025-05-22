@@ -13,6 +13,7 @@ import LotusReservation from "./pages/Reservation/LotusReservation";
 import FineDining from "./pages/FineDining/FineDining";
 import FaqPage from "./pages/FooterLinks/Faq/Faq";
 import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
+import PrivacyCookie from "./pages/FooterLinks/CookiePrivacy/CookiePrivacy";
 
 function App() {
   return (
@@ -29,8 +30,8 @@ function App() {
         <Route path="/cancel-reservation" element={<CancelReservation />} />
         <Route path="/fine-dining" element={<FineDining />} />
         {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
-        <Route path="/faq-page" element={<FaqPage />} />
         <Route path="/newsletter" element={<NewsletterPage />} />
+        <Route path="/cookie-policy" element={<PrivacyCookie />} />
       </Routes>
       <Footer />
     </>

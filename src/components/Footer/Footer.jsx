@@ -43,9 +43,7 @@ function Footer() {
                 <div className="privacy-legal-of-footer-lotus-las-vegas">
                     <a href="#">Copyright © 2025 Las Vegas Resort. All rights reserved.</a>
                     <span>|</span>
-                    <a href="#">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="#">Cookie Policy</a>
+                    <Link to='/cookie-policy'>Privacy Policy & Cookie Policy</Link>
                 </div>
 
             </div>

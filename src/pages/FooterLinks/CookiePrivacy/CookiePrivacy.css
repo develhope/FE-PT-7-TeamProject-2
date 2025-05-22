@@ -1,0 +1,62 @@
+.privacy-and-cookie-footer-container {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.privacy-and-cookie-footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.privacy-and-cookie-button {
+  background-color: var(--clr-blue);
+  color: white;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-and-cookie-button:hover {
+  background-color: white;
+  color: var(--clr-dark-blue);
+}
+
+.privacy-and-cookie-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-and-cookie-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--clr-gold);
+}
+
+.privacy-and-cookie-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: white;
+  font-weight: 200;
+}
+
+.privacy-and-cookie-last-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 200;
+}
+
+.privacy-lotus-email {
+  color: var(--clr-gold);
+  font-weight: 300;
+}
