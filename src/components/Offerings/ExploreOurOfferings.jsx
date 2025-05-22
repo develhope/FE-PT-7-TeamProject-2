@@ -1,6 +1,6 @@
 import "./ExploreOurOfferings.css";
 import OfferingsCard from "./OfferingsCard/OfferingsCard";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function ExploreOurOfferings() {
   const cards = [
@@ -45,7 +45,6 @@ function ExploreOurOfferings() {
   const cardsPerView = 3;
   const slideWidth = 320;
   const gap = 20;
-  const wrapperRef = useRef(null);
 
   const extendedCards = [
     ...cards.slice(-cardsPerView),
@@ -108,7 +107,6 @@ function ExploreOurOfferings() {
           <div className="carousel-outer">
             <div
               className="carousel-card-wrapper"
-              ref={wrapperRef}
               style={{
                 transform: `translateX(-${current * (slideWidth + gap)}px)`,
                 transition: transition

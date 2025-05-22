@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="navbar">
@@ -16,12 +23,10 @@ function Navbar() {
           />
         </div>
         <div className="navbar-links">
-          <a href="FE-PT-7-TeamProject-2/src/components/Rooms/Rooms.jsx">
-            Rooms
-          </a>
+          <a href="#rooms" onClick={(e) => { e.preventDefault(); handleScrollToSection("rooms"); }}>Rooms</a>
           <Link to="/spa-booking">Spa</Link>
           <Link to="/casino-details-main">Casino</Link>
-          <Link to="/about-us">About Us</Link>
+          <a href="#about" onClick = {(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a>
           <Link to="/lotus-reservation">
             <button className="button-submit">Book Now</button>
           </Link>
