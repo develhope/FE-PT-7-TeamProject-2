@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Rooms.css";
+import {Link} from 'react-router-dom';
 
 function RoomsCard({ images, name, description, price }) {
   const [index, setIndex] = useState(0);
@@ -49,7 +50,7 @@ function RoomsCard({ images, name, description, price }) {
         <p className="description">{description}</p>
         <div className="price-button">
           <p className="price">{price}</p>
-          <a className="button-link">Book Now</a>
+          <Link to='/lotus-reservation' className="button-link">Book Now</Link>
         </div>
       </div>
     </div>
