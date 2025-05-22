@@ -1,0 +1,35 @@
+.casino-details-feature {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.casino-details-feature:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+.casino-details-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.casino-details-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.casino-details-h3-top-tier,
+.casino-details-h3-classic-table,
+.casino-details-h3-exclusive-vip {
+  color: #C4A55F;
+  font-size: 1.5em;
+}
+.casino-details-p-top-tier-more-info,
+.casino-details-p-classic-table-more-info,
+.casino-details-p-exclusive-more-info {
+  color: #fff;
+}

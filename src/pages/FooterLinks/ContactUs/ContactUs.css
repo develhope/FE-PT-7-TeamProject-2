@@ -1,0 +1,31 @@
+.footer-contact-form-layout-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+.footer-form-with-name-email-message {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+
+.footer-form-with-name-email-message label {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-form-with-name-email-message input,
+.footer-form-with-name-email-message textarea,
+.footer-form-with-name-email-message input.footer-email {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1f2937;
+    background-color: var(--clr-blue);
+    color: white;
+    resize: none;
+}
+

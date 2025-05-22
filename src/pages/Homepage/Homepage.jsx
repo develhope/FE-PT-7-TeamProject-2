@@ -1,23 +1,24 @@
-import Navbar from '../../components/Navbar/Navbar'
-import Hero from '../../components/Hero/Hero'
-//import Rooms from '../../components/Rooms/Rooms'
-import Spa from '../../components/Spa/Spa'
-// import Casino from '../../components/Casino/Casino'
-// import AboutUs from '../../components/AboutUs/AboutUs'
-import Footer from '../../components/Footer/Footer'
+import NewsletterPopup from "../../components/NewsletterPopup/NewsletterPopup";
+import Hero from "../../components/Hero/Hero";
+import Rooms from "../../components/Rooms/Rooms";
+import Spa from "../../components/Spa/Spa";
+import ExploreOurOfferings from "../../components/Offerings/ExploreOurOfferings";
+import Casino from "../../components/Casino/Casino";
+import AboutUs from "../../components/AboutUs/AboutUs";
+
 
 function Homepage() {
   return (
     <>
-      <Navbar />
+      <NewsletterPopup />
       <Hero />
-    {/*<Rooms />*/}
+      <Rooms />
       <Spa />
-      {/* <Casino /> */}
-      {/* <AboutUs /> */}
-      <Footer />
+      <ExploreOurOfferings />
+      <Casino />
+      <AboutUs />
     </>
-  )
+  );
 }
 
-export default Homepage
+export default Homepage;

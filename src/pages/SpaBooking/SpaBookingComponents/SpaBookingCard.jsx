@@ -22,12 +22,12 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
           <form className="spa-booking-form">
             <div>
               <label htmlFor="date">Date<br/></label>
-              <input type="date" id="form-date" />
+              <input type="date" id="form-date" required/>
             </div>
             
             <div>
               <label htmlFor="time">Time <br/></label>
-              <select id="booking-appointment">
+              <select id="booking-appointment" required>
                 <option value="10:00">10:00 - 11:00</option>
                 <option value="11:00">11:00 - 12:00</option>
                 <option value="12:00">12:00 - 13:00</option>
@@ -36,20 +36,21 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
             
             <div>
               <label htmlFor="person-number">How Many People<br/></label>
-              <input type="number" id="person-number" min={1} defaultValue={1} />
+              <input type="number" id="person-number" min={1} max={4} defaultValue={1} required />
             </div>
             
             <div>
               <p className="spa-price">Price: ${price}</p>
             </div>
-          </form>
+          
           <button
-            type="button"
+            type="submit"
             className="button-submit"
             onClick={() => onAdd({ title, price, imgSrc })}
           >
             ADD
           </button>
+          </form>
         </div>
       </div>
     </div>

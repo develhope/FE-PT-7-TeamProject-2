@@ -1,0 +1,27 @@
+.casino-details-main-section {
+  background: #0B1120;
+  font-family: 'Inter', serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Animazione base */
+.casino-details-feature,
+.casino-details-event-card,
+.casino-details-offers-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

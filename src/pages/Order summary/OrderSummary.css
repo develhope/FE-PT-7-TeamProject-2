@@ -58,7 +58,7 @@
 }
 
 .remove-item-button {
-    color: #C4A55F;
+    color: var(--clr-gold);
     font-weight: bold;
     cursor: pointer;
     border: none;

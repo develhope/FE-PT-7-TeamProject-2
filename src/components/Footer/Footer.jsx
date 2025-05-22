@@ -29,14 +29,13 @@ function Footer() {
                 </div>
 
 
-                <FooterSocial/>
+                <FooterSocial />
 
                 <div className="footer-lotus-las-vegas-links">
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Newsletter</a>
-                    <a href="#">Cancel Reservation</a>
-                    <Link to="/premium-experiences">Premium Experiences</Link>
+                    <Link to="/faq-page">FAQ</Link>
+                    <Link to="/contact-us">Contact Us</Link>
+                    <Link to="/newsletter">Newsletter</Link>
+                    <Link to='/cancel-reservation'>Cancel Reservation</Link>
                 </div>
 
                 <div className="footer-divider"></div>
@@ -44,9 +43,7 @@ function Footer() {
                 <div className="privacy-legal-of-footer-lotus-las-vegas">
                     <a href="#">Copyright © 2025 Las Vegas Resort. All rights reserved.</a>
                     <span>|</span>
-                    <a href="#">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="#">Cookie Policy</a>
+                    <Link to='/cookie-policy'>Privacy Policy & Cookie Policy</Link>
                 </div>
 
             </div>

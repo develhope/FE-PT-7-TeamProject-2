@@ -2,34 +2,34 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="navbar">
         <div className="navbar-logo-and-title">
-          <h1> Lotus Las Vegas</h1>
+          <Link to="/">
+            <h1> Lotus Las Vegas</h1>
+          </Link>
           <img
-            className="logo-image"
+            className="navbar-logo-image"
             src="/logo-removebg-preview.png"
             alt="lotus-logo"
           />
         </div>
         <div className="navbar-links">
-          <a href="FE-PT-7-TeamProject-2/src/components/Rooms/Rooms.jsx">
-            Rooms
-          </a>
-
+          <a href="#rooms" onClick={(e) => { e.preventDefault(); handleScrollToSection("rooms"); }}>Rooms</a>
           <Link to="/spa-booking">Spa</Link>
-
-          <a href="FE-PT-7-TeamProject-2\src\components\Casino\Casino.jsx">
-            Casino
-          </a>
-
-          <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
-            About Us
-          </a>
-          <a href="FE-PT-7-TeamProject-2\src\components\Booking\Booking.jsx">
-            <button className="button-link">Book Now</button>
-          </a>
+          <Link to="/casino-details-main">Casino</Link>
+          <a href="#about" onClick = {(e) => { e.preventDefault(); handleScrollToSection("about"); }}>About Us</a>
+          <Link to="/lotus-reservation">
+            <button className="button-submit">Book Now</button>
+          </Link>
         </div>
       </div>
     </>

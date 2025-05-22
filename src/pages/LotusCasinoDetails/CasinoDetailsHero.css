@@ -1,0 +1,14 @@
+.casino-details-hero {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+.casino-details-main-title {
+  font-size: 3em;
+  margin-top: 60px;
+  animation: fadeIn 1.2s ease-in-out;
+  color: #C4A55F;
+}
+.casino-details-subtitle {
+  font-size: 1.3em;
+  color: #fff;
+}

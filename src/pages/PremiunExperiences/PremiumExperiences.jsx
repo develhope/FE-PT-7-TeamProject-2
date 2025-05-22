@@ -2,44 +2,44 @@ import './PremiumExperiences.css'
 import ExperienceCard from './ExperienceCard'
 import ModalReservation from './ModalReservatio'
 import { useState } from 'react'
-import Footer from './../../components/Footer/Footer'
+
 
 const experiences = [
   {
     title: 'Desert Lamborghini Adventure',
     description: 'Drive exotic supercars through scenic desert routes with professional guidance',
     price: '$1499',
-    image: '/LotusPic/lambo.png'
+    images: ['/LotusPic/lambo2.jpeg','/LotusPic/lambo.png']
   },
   {
     title: 'Private Helicopter Sunset Tour',
     description: 'Experience the magic of Las Vegas from above as the city lights begin to sparkle',
     price: '$1299',
-    image: '/LotusPic/elicottero.png'
+    images: ['/LotusPic/elicottero2.jpeg','/LotusPic/elicottero.png']
   },
   {
     title: "Exclusive Chef's Table",
     description: 'An intimate culinary journey with our best master chef in a private dining setting',
     price: '$899',
-    image: '/LotusPic/cena.png'
+    images: ['/LotusPic/cena2.jpeg','/LotusPic/cena.png']
   },
   {
     title: 'VIP Nightlife Experience',
     description: 'Access to exclusive clubs and private lounges with personal concierge',
     price: '$799',
-    image: '/LotusPic/night.png'
+    images: ['/LotusPic/vip2.jpeg','/LotusPic/night.png']
   },
   {
     title: 'Luxury Spa Retreat',
     description: 'A full day of personalized treatments in our award-winning wellness sanctuary',
     price: '$599',
-    image: '/LotusPic/spa.png'
+    images: ['/LotusPic/spa22.jpeg','/LotusPic/spa.png']
   },
   {
     title: 'Private Wine Tasting',
     description: 'Curated wine experience with rare vintages and artisanal pairings',
     price: '$449',
-    image: '/LotusPic/vino.png'
+    images: ['/LotusPic/vino2.jpeg','/LotusPic/vino.png']
   }
 ]
 
@@ -67,8 +67,6 @@ function PremiumExperiences() {
 
         {showModal && <ModalReservation onClose={() => setShowModal(false)} />}
       </div>
-
-      <Footer />
     </>
   )
 }
