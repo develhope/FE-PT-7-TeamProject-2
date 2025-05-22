@@ -21,8 +21,8 @@ function RoomsCard({ images, name, description, price }) {
 
   return (
     <div className="card">
-      <div className="image-container">
-        <img className="image" src={images[index]} alt={name} />
+      <div className="image-container-room">
+        <img className="image-room" src={images[index]} alt={name} />
         {images.length > 1 && (
           <>
             <button className="arrow-btn left" onClick={prevImage}>

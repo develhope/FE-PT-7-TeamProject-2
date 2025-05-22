@@ -37,7 +37,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-.image-container {
+.image-container-room {
   width: 100%;
   height: 220px;
   overflow: hidden;
@@ -47,7 +47,7 @@
   position: relative;
 }
 
-.image {
+.image-room {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -60,7 +60,7 @@
   transform: scale(1.1);
 }
 .card-details {
-  padding: 16px;
+  padding: 40px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -91,15 +91,6 @@
   font-weight: bold;
 }
 
-.button-link {
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
 
 @media (max-width: 1024px) {
   .rooms-grid {
@@ -120,7 +111,7 @@
   background: rgba(0, 0, 0, 0.5);
   border: none;
   color: #fff;
-  font-size: 22px;
+  font-size: 17px;
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 50%;
