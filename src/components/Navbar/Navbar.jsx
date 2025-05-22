@@ -6,7 +6,9 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-logo-and-title">
-          <Link to="/"><h1> Lotus Las Vegas</h1></Link>
+          <Link to="/">
+            <h1> Lotus Las Vegas</h1>
+          </Link>
           <img
             className="navbar-logo-image"
             src="/logo-removebg-preview.png"
@@ -18,11 +20,11 @@ function Navbar() {
             Rooms
           </a>
           <Link to="/spa-booking">Spa</Link>
-          <a href="/casino-details"> Casino</a>
-          <a href="FE-PT-7-TeamProject-2\src\components\AboutUs\AboutUs.jsx">
-            About Us
-          </a>
-           <Link to='/lotus-reservation'> <button className="button-submit">Book Now</button></Link>
+          <Link to="/casino-details-main">Casino</Link>
+          <Link to="/about-us">About Us</Link>
+          <Link to="/lotus-reservation">
+            <button className="button-submit">Book Now</button>
+          </Link>
         </div>
       </div>
     </>
