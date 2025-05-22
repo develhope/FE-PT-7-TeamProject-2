@@ -11,21 +11,7 @@
   justify-content: flex-start;
 }
 
-.wcc-central-button-wrapper {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
 
-.button-link {
-  background: #C4A55F;
-  color: #181F2A;
-  padding: 14px 32px;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1em;
-  text-decoration: none;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-}
+
+
 

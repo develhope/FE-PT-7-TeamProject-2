@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "./pages/Homepage/Homepage";
 import PremiumExperiences from "./pages/PremiunExperiences/PremiumExperiences";
 import SpaBooking from "./pages/SpaBooking/SpaBooking";
@@ -13,9 +14,19 @@ import FineDining from "./pages/FineDining/FineDining";
 import FaqPage from "./pages/FooterLinks/Faq/Faq";
 import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
 
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    // Scroll to the top of the page when the route changes
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname]);
+
+  return children;
+};
 function App() {
   return (
-    <>
+    <Wrapper>
     <Navbar />
     <Routes>
       <Route path="/" element={<Homepage />} />
@@ -31,7 +42,7 @@ function App() {
       <Route path="/faq-footer" element={<FaqPage />} />
     </Routes>
     <Footer />
-    </>
+    </Wrapper>
   );
 }
 
