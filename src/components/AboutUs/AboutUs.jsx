@@ -2,11 +2,11 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className="about-us" id="about">
       <div className="text-and-image">
         <div className="text-side">
           <h1 className="about-us-title">About us</h1>
-          <p>
+          <p className="about-us-description">
             Lous Las Vegas is a luxury resort that defines elegance and excitement.
             Located on the iconic Las Vegas Strip, our casino offers world-class gaming,
             while our refined accommodations provide ultimate comfort. Enjoy exceptional
