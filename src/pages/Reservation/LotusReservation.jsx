@@ -16,7 +16,6 @@ function LotusReservation() {
   const [checkin, setCheckin] = useState("");
   const [checkout, setCheckout] = useState("");
 
-  // Calcolo notti
   function getNights() {
     if (!checkin || !checkout) return 0;
     const inDate = new Date(checkin);

@@ -12,7 +12,7 @@ function NewsletterPage() {
           </p>
 
           <form>
-            <input type="email" placeholder="Email" id="email" required />
+            <input type="email" placeholder="Email" id="email" className="ns-em" required />
 
             <small className="privacy-note">
               This site is protected by reCAPTCHA and the Google Privacy Policy

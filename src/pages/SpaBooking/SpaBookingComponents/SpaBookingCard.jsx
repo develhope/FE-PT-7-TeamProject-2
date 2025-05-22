@@ -27,7 +27,7 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
             
             <div>
               <label htmlFor="time">Time <br/></label>
-              <select id="booking-appointment">
+              <select id="booking-appointment" required>
                 <option value="10:00">10:00 - 11:00</option>
                 <option value="11:00">11:00 - 12:00</option>
                 <option value="12:00">12:00 - 13:00</option>
@@ -42,14 +42,15 @@ function SpaBookingCard({ imgSrc, title, description, price, onAdd }) {
             <div>
               <p className="spa-price">Price: ${price}</p>
             </div>
-          </form>
+          
           <button
-            type="button"
+            type="submit"
             className="button-submit"
             onClick={() => onAdd({ title, price, imgSrc })}
           >
             ADD
           </button>
+          </form>
         </div>
       </div>
     </div>
