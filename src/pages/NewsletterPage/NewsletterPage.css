@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
+
+/* Impostazioni base */
+body {
+  margin: 0;
+  background-color: #0B1120;
+  color: #ffffff;
+}
+
+main {
+  margin: 0;
+  background-color: #0B1120;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 40px 0;
+}
+
+/* Sezione iscrizione */
+.signup-section {
+  padding: 40px 20px;
+  background-color: #0B1120;
+}
+
+
+/* Titolo principale centrato */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #c4a55f;
+  text-align: center;
+}
+
+/* Sottotitolo */
+.subtitle {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Input email */
+.ns-em {
+  width: 50%;
+  padding: 12px 16px;
+  margin: 0 auto 20px;
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.ns.em::placeholder {
+  color: #b3acac;
+}
+
+/* Note legali */
+.privacy-note {
+  display: block;
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Titoli secondari */
+h2 {
+  font-size: 1.2rem;
+  margin: 25px 0 10px;
+  color: #c4a55f;
+  text-align: center;
+}
+
+.privacy-text,
+.marketing-text {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Opzioni radio */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.options input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.options input[type="radio"]:hover {
+  background-color: #c4a55f;
+  border-color: #c4a55f;
+}
+
+/* Immagine ReCAPTCHA */
+.image-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.image-container img {
+  width: 15%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Bottone */
+button#subscribeBtn {
+  display: block;
+  margin: 40px auto 0;
+  background-color: #c4a55f;
+  color: #0d1116;
+  border: none;
+  padding: 12px 200px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button#subscribeBtn:hover {
+  background-color: #3c486a;
+  color: #c4a55f;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
