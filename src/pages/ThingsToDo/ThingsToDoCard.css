@@ -1,122 +1,111 @@
-.cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* Card principale */
 .cardThingsToDo {
-  background-color: #1A1F2E;
-  border: 2px solid #C4A55F;
-  width: calc(50% - 2rem);
-  max-width: 750px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+    background-color: #0b1120;
+    border: 2px solid #C4A55F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
 }
-
 
 .cardThingsToDo.reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
-/* Immagine */
-.cardThingsToDo .image-container {
-  position: relative;
-  width: 40%;
-  min-width: 300px;
+.cardThingsToDo .ttdc-image-container {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
-
-.card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.cardThingsToDo .ttdc-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-
-
-
-
-/* Dots */
-.dots {
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+/* PALLINI SLIDER */
+.ttdc-dots {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
 }
 
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 4px;
-  background-color: #c4a55f;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  opacity: 0.6;
+.ttdc-dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #c4a55f;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.6;
 }
 
-.dot.active {
-  opacity: 1;
-  background-color: #C4A55F;
+.ttdc-dot.ttdc-active {
+    opacity: 1;
 }
 
-/* Contenuto */
-.cardThingsToDo .content {
-  width: 60%;
-  padding: 1.5rem;
-  box-sizing: border-box;
+.cardThingsToDo .ttdc-content {
+    width: 90%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #f5f5f5;
 }
 
-.cardThingsToDo .content h2 {
-  color: #C4A55F;
+.cardThingsToDo .ttdc-content h2 {
+    color: #C4A55F;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
-.cardThingsToDo .content p {
-  color: #f5f5f5;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+.cardThingsToDo .ttdc-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
 }
 
+.cardThingsToDo .ttdc-content ul {
+    margin-left: 14px;
+    padding: 0;
+    font-size: 0.95rem;
+}
 
-/* Prezzo + pulsante */
 .price-book {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
-.price {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: white;
+.ttdc-price {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-/* Pulsante */
-.book-btn {
-  background-color: #C4A55F;
-  color: #0B1120;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: none;
+.ttdc-button-submit {
+    background-color: var(--clr-gold);
+    color: var(--clr-dark-blue);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    border: none;
 }
 
-/* Pulsante con classe change-color */
-.change-color .book-btn {
-  background-color: #c4a55f;
-  color: #0B1120;
-}
-
-.change-color .book-btn:hover {
-  background-color: #0b1120;
-  color: #c4a55f;
+.ttdc-button-submit:hover {
+    background-color: #3c486a;
+    color: var(--clr-gold);
 }
