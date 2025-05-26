@@ -1,6 +1,7 @@
 import "./ExploreOurOfferings.css";
 import OfferingsCard from "./OfferingsCard/OfferingsCard";
 import { useState, useEffect } from "react";
+import { useRef } from "react";
 
 function ExploreOurOfferings() {
   const cards = [
@@ -51,12 +52,14 @@ function ExploreOurOfferings() {
     ...cards,
     ...cards.slice(0, cardsPerView),
   ];
-
+  const btnNext = useRef();
+  const btnPrev = useRef();
   const [current, setCurrent] = useState(cardsPerView);
   const [transition, setTransition] = useState(true);
   const [needReset, setNeedReset] = useState(false);
 
   const handleNext = () => {
+    btnNext.current.disabled = true;
     if (current === extendedCards.length - cardsPerView - 1) {
       setNeedReset("start");
     }
@@ -65,6 +68,7 @@ function ExploreOurOfferings() {
   };
 
   const handlePrev = () => {
+    btnPrev.current.disabled = true;
     if (current === 1) {
       setNeedReset("end");
     }
@@ -83,6 +87,8 @@ function ExploreOurOfferings() {
       setCurrent(extendedCards.length - 2 * cardsPerView);
       setNeedReset(false);
     }
+    btnPrev.current.disabled = false;
+    btnNext.current.disabled = false;
   };
 
   useEffect(() => {
@@ -99,9 +105,7 @@ function ExploreOurOfferings() {
       <h1 className="offerings-header">Explore Our Offerings</h1>
       <div className="carousel">
         <div className="offerings-carousel" style={{ position: "relative" }}>
-          <div className="carousel-fade carousel-fade-left"></div>
-          <div className="carousel-fade carousel-fade-right"></div>
-          <button className="carousel-btn" onClick={handlePrev}>
+          <button className="carousel-btn" onClick={handlePrev} ref={btnPrev}>
             &lt;
           </button>
           <div className="carousel-outer">
@@ -121,7 +125,7 @@ function ExploreOurOfferings() {
               ))}
             </div>
           </div>
-          <button className="carousel-btn" onClick={handleNext}>
+          <button className="carousel-btn" onClick={handleNext} ref={btnNext}>
             &gt;
           </button>
         </div>
