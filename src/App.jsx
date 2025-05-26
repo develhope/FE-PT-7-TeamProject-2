@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "./pages/Homepage/Homepage";
 import PremiumExperiences from "./pages/PremiunExperiences/PremiumExperiences";
 import SpaBooking from "./pages/SpaBooking/SpaBooking";
-import CasinoDetailsMain from "./pages/LotusCasinoDetails/CasinoDetailsMain";
+import CasinoDetailsMain from "./pages/LotusCasinoDetails/CasinoMainAndHero/CasinoDetailsMain"
 import Footer from "./components/Footer/Footer";
 // import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
 import ContactUs from "./pages/FooterLinks/ContactUs/ContactUs";
