@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Rooms.css";
+import { Link } from "react-router-dom";
 
 function RoomsCard({ images, name, description, price }) {
   const [index, setIndex] = useState(0);
@@ -21,8 +22,8 @@ function RoomsCard({ images, name, description, price }) {
 
   return (
     <div className="card">
-      <div className="image-container">
-        <img className="image" src={images[index]} alt={name} />
+      <div className="image-container-room">
+        <img className="image-room" src={images[index]} alt={name} />
         {images.length > 1 && (
           <>
             <button className="arrow-btn left" onClick={prevImage}>
@@ -49,7 +50,7 @@ function RoomsCard({ images, name, description, price }) {
         <p className="description">{description}</p>
         <div className="price-button">
           <p className="price">{price}</p>
-          <a className="button-link">Book Now</a>
+          <Link to='/lotus-reservation' className="button-link">Book Now</Link>
         </div>
       </div>
     </div>

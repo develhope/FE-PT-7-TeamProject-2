@@ -1,10 +1,10 @@
 import React from "react";
 import CasinoDetailsHero from "./CasinoDetailsHero";
-import FeaturesList from "./FeaturesList";
-import EventsSection from "./EventsSection";
-import OffersSection from "./OffersSection";
-import ContactSection from "./ContactSection";
-import useRevealOnScroll from "./RevealOnScroll";
+import FeaturesList from "../FeaturesCardAndList/FeaturesList"
+import EventsSection from "../CasinoEventCardAndSection/EventsSection";
+import OffersSection from "../CasinoOfferSectAndReveal/OffersSection";
+import ContactSection from "../SezioneContattiCasino/ContactSection";
+import useRevealOnScroll from "../CasinoOfferSectAndReveal/RevealOnScroll";
 import "./CasinoDetailsMain.css";
 
 
