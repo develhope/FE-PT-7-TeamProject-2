@@ -4,7 +4,6 @@ import PremiumExperiences from "./pages/PremiunExperiences/PremiumExperiences";
 import SpaBooking from "./pages/SpaBooking/SpaBooking";
 import CasinoDetailsMain from "./pages/LotusCasinoDetails/CasinoDetailsMain";
 import Footer from "./components/Footer/Footer";
-
 // import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
 import ContactUs from "./pages/FooterLinks/ContactUs/ContactUs";
 import CancelReservation from "./pages/FooterLinks/CancelReservation/CancelReservation";
@@ -13,6 +12,7 @@ import LotusReservation from "./pages/Reservation/LotusReservation";
 import FineDining from "./pages/FineDining/FineDining";
 import FaqPage from "./pages/FooterLinks/Faq/Faq";
 import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
+import ThingsToDo from "./pages/ThingsToDo/ThingsToDo";
 import PrivacyCookie from "./pages/FooterLinks/CookiePrivacy/CookiePrivacy";
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
         <Route path="/fine-dining" element={<FineDining />} />
         {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
         <Route path="/newsletter" element={<NewsletterPage />} />
+        <Route path="/thingstodo" element={<ThingsToDo />} />
         <Route path="/cookie-policy" element={<PrivacyCookie />} />
       </Routes>
       <Footer />
