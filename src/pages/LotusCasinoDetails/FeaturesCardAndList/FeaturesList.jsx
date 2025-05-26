@@ -4,7 +4,7 @@ import "./FeaturesList.css";
 
 const features = [
   {
-    imgSrc: "Lotus/Lotus-pics/High Limit Room.jpeg",
+    imgSrc: "CasinoPics/High-Limit-Room.jpeg",
     imgAlt: "High Limit Room",
     title: "Top-Tier Slot Machines",
     description: "Enjoy hundreds of state-of-the-art slot games with progressive jackpots and stunning visuals.",
@@ -12,7 +12,7 @@ const features = [
     descClass: "casino-details-p-top-tier-more-info"
   },
   {
-    imgSrc: "Lotus/Lotus-pics/Roulette.jpeg",
+    imgSrc: "CasinoPics/Roulette.jpeg",
     imgAlt: "Roulette",
     title: "Classic Table Games",
     description: "From Poker to Blackjack and Roulette, take your seat at our professional-grade tables.",
@@ -20,7 +20,7 @@ const features = [
     descClass: "casino-details-p-classic-table-more-info"
   },
   {
-    imgSrc: "Lotus/Lotus-pics/Texas-Hold-Em.jpeg",
+    imgSrc: "CasinoPics/Texas-Hold-Em.jpeg",
     imgAlt: "Texas Hold'Em",
     title: "Exclusive VIP Lounge",
     description: "Indulge in privacy and prestige with personal service and high-limit games.",
