@@ -39,7 +39,7 @@ function ContactFooter() {
                 <label htmlFor="email">Email</label>
                 <input
                     type="email"
-                    id="email"
+                    className="footer-email"
                     value={formData.email}
                     onChange={handleChange}
                     required

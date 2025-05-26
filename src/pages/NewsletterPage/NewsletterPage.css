@@ -37,7 +37,7 @@ h1 {
 }
 
 /* Input email */
-form input[type="email"] {
+.ns-em {
   width: 100%;
   max-width: 600px;
   padding: 12px 16px;
@@ -50,7 +50,7 @@ form input[type="email"] {
   color: #ffffff;
 }
 
-form input[type="email"]::placeholder {
+.ns.em::placeholder {
   color: #b3acac;
 }
 

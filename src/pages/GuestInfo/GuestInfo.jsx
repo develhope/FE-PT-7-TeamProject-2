@@ -1,4 +1,3 @@
-import React from 'react';
 import './GuestInfo.css';
 
 function GuestInfo({ onSubmit, title = "Guest Information", buttonLabel = "Confirm Booking" }) {
