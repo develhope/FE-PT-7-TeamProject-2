@@ -6,6 +6,7 @@
     margin: 30px auto;
     color: var(--clr-gold);
     box-shadow: 0 2px 12px #000a;
+    border: 1px solid var(--clr-gold);
 }
 
 .reserv-header {

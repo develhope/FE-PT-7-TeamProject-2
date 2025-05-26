@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
+
 
 /* Base generale */
 body {
@@ -39,7 +39,7 @@ body {
 
 /* Logo immagine */
 .popup-box img,
-.logo {
+.logonl {
   max-width: 20%;
   height: auto;
   margin-bottom: 15px;
@@ -71,10 +71,12 @@ body {
   font-size: 1em;
   background-color: #C4A55F;
   color: #ffffff;
-  caret-color: #ffffff;
 }
 
-
+.popup-box input[type="email"]::placeholder{
+  color: #ffffff;
+  opacity: 1;
+}
 /* Bottone submit */
 .popup-box input[type="submit"] {
   width: 100%;

@@ -41,6 +41,7 @@ function CancelReservation() {
                     <input
                         type="email"
                         id="email"
+                        className="footer-email"
                         value={formData.email}
                         onChange={handleChange}
                         required

@@ -74,3 +74,29 @@
     font-weight: 400;
     white-space: nowrap;
 }
+
+.pallini-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.pallino {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.pallino.attivo {
+    background: white;
+}
+
+.experience-image-wrapper {
+    position: relative;
+}

@@ -4,8 +4,8 @@ import RoomsCard from "./RoomsCard";
 const stanze = [
   {
     images: [
-      "/public/LotusPic/deluxe-suite.jpeg",
-      "/public/LotusPic/deluxe-suite-2.jpeg"
+      "/LotusPic/deluxe-suite.jpeg",
+      "/LotusPic/deluxe-suite-2.jpeg"
     ],
     name: "Deluxe Suite",
     description: "Elegant 600 sq ft suite with city views",
@@ -13,8 +13,8 @@ const stanze = [
   },
   {
     images: [
-      "/public/LotusPic/executive-suite.jpeg",
-      "/public/LotusPic/executive-suite-2.jpeg"
+      "/LotusPic/executive-suite.jpeg",
+      "/LotusPic/executive-suite-2.jpeg"
     ],
     name: "Executive Suite",
     description: "Luxurious 900 sq ft suite with strip views",
@@ -22,8 +22,8 @@ const stanze = [
   },
   {
     images: [
-      "/public/LotusPic/presidential-suite.jpg",
-      "/public/LotusPic/presidential-suite-2.jpg"
+      "/LotusPic/presidential-suite.jpg",
+      "/LotusPic/presidential-suite-2.jpg"
     ],
     name: "Presidential Suite",
     description: "Ultimate 1500 sq ft luxury experience",
@@ -31,8 +31,8 @@ const stanze = [
   },
   {
     images: [
-      "/public/LotusPic/comfortRoom.jpg",
-      "/public/LotusPic/comfortRoom-2.jpg"
+      "/LotusPic/comfortRoom.jpg",
+      "/LotusPic/comfortRoom-2.jpg"
     ],
     name: "Comfort Room",
     description: "Bright and stylish 350 sq ft",
@@ -40,8 +40,8 @@ const stanze = [
   },
   {
     images: [
-      "/public/LotusPic/Family Comfort.jpg",
-      "/public/LotusPic/FamilyComfort-2.jpg"
+      "/LotusPic/Family Comfort.jpg",
+      "/LotusPic/FamilyComfort-2.jpg"
     ],
     name: "Family Comfort Room",
     description: "Inviting 600 sq ft room designed for families",
@@ -49,8 +49,8 @@ const stanze = [
   },
   {
     images: [
-      "/public/LotusPic/Family Suite.jpg",
-      "/public/LotusPic/FamilySuite-2.jpg"
+      "/LotusPic/Family Suite.jpg",
+      "/LotusPic/FamilySuite-2.jpg"
     ],
     name: "Family Suite",
     description: "Spacious 900 sq ft family suite",
@@ -60,7 +60,7 @@ const stanze = [
 
 function Rooms() {
   return (
-    <div className="luxury-section">
+    <div className="luxury-section" id='rooms'>
       <h1>Luxury Accommodation</h1>
       <div className="rooms-grid">
         {stanze.map((stanza, i) => (

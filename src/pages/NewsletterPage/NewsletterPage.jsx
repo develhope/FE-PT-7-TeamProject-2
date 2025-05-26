@@ -5,14 +5,14 @@ function NewsletterPage() {
   return (
     <main>
       <section className="signup-section">
-        <div className="container">
+        <div className="containernl">
           <h1>Subscribe to our newsletter</h1>
-          <p className="subtitle">
+          <p className="subtitlenl">
             Don’t miss out on our latest news, updates, tips and special offers
           </p>
 
           <form>
-            <input type="email" placeholder="Email" id="email" required />
+            <input type="email" placeholder="Email" id="email" className="ns-em" required />
 
             <small className="privacy-note">
               This site is protected by reCAPTCHA and the Google Privacy Policy
@@ -29,7 +29,7 @@ function NewsletterPage() {
               models, and event invitations.
             </p>
 
-            <div className="options">
+            <div className="optionsnl">
               <label>
                 <input type="radio" name="privacy" value="agree" required />I
                 agree
@@ -49,7 +49,7 @@ function NewsletterPage() {
               phone calls to landlines or mobile phones).
             </p>
 
-            <div className="options">
+            <div className="optionsnl">
               <label>
                 <input type="radio" name="marketing" value="agree" required />I
                 agree
@@ -60,11 +60,11 @@ function NewsletterPage() {
               </label>
             </div>
 
-            <div className="image-container">
+            <div className="newsletter-image-container">
               <img src="/LotusPic/ReCaptcha.jpeg" alt="ReCaptcha" />
             </div>
 
-            <button id="subscribeBtn" type="submit">
+            <button className="newsletter-subscribe-btn" type="submit">
               Subscribe
             </button>
           </form>
