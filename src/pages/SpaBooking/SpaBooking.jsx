@@ -24,11 +24,6 @@ function SpaBooking() {
       <div className="spa-booking">
         <div className="spa-booking-head">
           <h1>Saphire Spa Booking</h1>
-          <img
-            className="spa-logo-image"
-            src="/logo-removebg-preview.png"
-            alt="Lotus logo"
-          />
         </div>
         <div className="spa-booking-cards">
           <div className="spa-card-content">
