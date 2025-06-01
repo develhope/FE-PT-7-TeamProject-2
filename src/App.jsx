@@ -14,6 +14,7 @@ import FineDining from "./pages/FineDining/FineDining";
 import FaqPage from "./pages/FooterLinks/Faq/Faq";
 import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
 import PrivacyCookie from "./pages/FooterLinks/CookiePrivacy/CookiePrivacy";
+import Cocktail from './pages/Cocktails/Cocktail';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
         <Route path="/newsletter" element={<NewsletterPage />} />
         <Route path="/cookie-policy" element={<PrivacyCookie />} />
+        <Route path="/cocktails" element={<Cocktail />} />
       </Routes>
       <Footer />
     </>
