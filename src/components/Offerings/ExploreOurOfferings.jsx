@@ -24,7 +24,7 @@ function ExploreOurOfferings() {
       description: "Experience Vegas with style",
     },
     {
-      link: "/src/pages/Coktails",
+      link: "/cocktails",
       imgSrc: "/Menù & carousel img/cocktails.png",
       title: "Cocktails",
       description: "Expertly crafted signature drinks",
