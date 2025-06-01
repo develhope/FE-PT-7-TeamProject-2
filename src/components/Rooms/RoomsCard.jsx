@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Rooms.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function RoomsCard({ images, name, description, price }) {
   const [index, setIndex] = useState(0);
