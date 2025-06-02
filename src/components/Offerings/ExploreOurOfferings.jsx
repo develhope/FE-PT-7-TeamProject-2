@@ -30,7 +30,7 @@ function ExploreOurOfferings() {
       description: "Expertly crafted signature drinks",
     },
     {
-      link: "/src/pages/ChildrensArea",
+      link: "childrenarea",
       imgSrc: "/Menù & carousel img/bambini.jpeg",
       title: "Children Area",
       description: "Fun activities for our youngest guests",
