@@ -34,6 +34,7 @@ h1 {
   margin-bottom: 25px;
   color: #ffffff;
   text-align: center;
+  padding: 10px;
 }
 
 /* Input email */
@@ -85,6 +86,7 @@ h2 {
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .optionsnl label {
@@ -112,6 +114,18 @@ h2 {
 .optionsnl input[type="radio"]:hover {
   background-color: #c4a55f;
   border-color: #c4a55f;
+}
+
+.optionsnl input[type="radio"]:checked {
+  appearance: none;
+  background-color: #c4a55f;
+  margin: 0;
+  color: #c4a55f;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c4a55f;
+  border-radius: 50%;
+
 }
 
 /* Immagine ReCAPTCHA */
