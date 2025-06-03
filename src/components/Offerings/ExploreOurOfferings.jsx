@@ -24,7 +24,7 @@ function ExploreOurOfferings() {
       description: "Experience Vegas with style",
     },
     {
-      link: "/src/pages/Coktails",
+      link: "/cocktails",
       imgSrc: "/Menù & carousel img/cocktails.png",
       title: "Cocktails",
       description: "Expertly crafted signature drinks",
@@ -36,7 +36,7 @@ function ExploreOurOfferings() {
       description: "Fun activities for our youngest guests",
     },
     {
-      link: "/src/pages/ThingsToDo",
+      link: "thingstodo",
       imgSrc: "/public/Menù & carousel img/thingsToDo.png",
       title: "Things To Do",
       description: "Discover the best of Las Vegas",
