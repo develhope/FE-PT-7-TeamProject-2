@@ -1,0 +1,29 @@
+.children-area-body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0B1120;
+  color: #333;
+}
+
+.children-area {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.children-area-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #C4A55F;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.children-area-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

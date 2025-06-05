@@ -24,13 +24,13 @@ function ExploreOurOfferings() {
       description: "Experience Vegas with style",
     },
     {
-      link: "/src/pages/Coktails",
+      link: "/cocktails",
       imgSrc: "/Menù & carousel img/cocktails.png",
       title: "Cocktails",
       description: "Expertly crafted signature drinks",
     },
     {
-      link: "/src/pages/ChildrensArea",
+      link: "childrenarea",
       imgSrc: "/Menù & carousel img/bambini.jpeg",
       title: "Children Area",
       description: "Fun activities for our youngest guests",
