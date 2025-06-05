@@ -1,0 +1,43 @@
+.brand-carousel-container {
+  overflow: hidden;
+  padding: 1rem 0;
+  margin-bottom: 60px;
+  background: linear-gradient(var(--clr-gold), rgb(252, 250, 239), var(--clr-gold));
+  width: 100%;
+}
+
+.brand-carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  animation: scroll 35s linear infinite;
+  width: max-content;
+}
+
+.brand-carousel-item {
+  flex-shrink: 0;
+  width: clamp(100px, 10vw, 160px);
+}
+
+.brand-carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* Responsive max height tweaks */
+@media (max-width: 768px) {
+  .brand-carousel-item img {
+    max-height: 80px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

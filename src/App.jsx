@@ -5,7 +5,8 @@ import PremiumExperiences from "./pages/PremiunExperiences/PremiumExperiences"
 import SpaBooking from "./pages/SpaBooking/SpaBooking"
 import CasinoDetailsMain from "./pages/LotusCasinoDetails/CasinoMainAndHero/CasinoDetailsMain"
 import Footer from "./components/Footer/Footer";
-// import NoleggioAuto from './pages/NoleggioAuto/NoleggioAuto'
+import CarRental from './pages/CarRental/CarRental'
+import CarDetails from './pages/CarRental/CarDetails'
 import ContactUs from "./pages/FooterLinks/ContactUs/ContactUs";
 import CancelReservation from "./pages/FooterLinks/CancelReservation/CancelReservation";
 import Navbar from "./components/Navbar/Navbar";
@@ -42,7 +43,8 @@ function App() {
       <Route path="/faq-page" element={<FaqPage />} />
       <Route path="/cancel-reservation" element={<CancelReservation />} />
       <Route path="/fine-dining" element={<FineDining />} />
-      {/* <Route path="/noleggio" element={<NoleggioAuto />} /> */}
+      <Route path="/luxury-car-rental" element={<CarRental/>} />
+      <Route path="/luxury-car-rental/:id" element={<CarDetails />} />
       <Route path="/faq-footer" element={<FaqPage />} />
       <Route path="/newsletter" element={<NewsletterPage />} />
       <Route path="/childrenarea" element={<ChildrenArea />} />
@@ -55,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

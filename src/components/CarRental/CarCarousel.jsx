@@ -1,18 +1,16 @@
-import React, { useEffect, useState, useRef } from 'react';
-import './Carousel.css';
-
-const images = [
-  './LotusPic/AudiR8.png',
-  './LotusPic/BMWM8.png',
-  './LotusPic/LamborghiniAventador.png',
-  './LotusPic/FerrariF8.png',
-  './LotusPic/FerrariPurosangue.png',
-];
+import { useEffect, useState, useRef } from 'react';
+import './CarCarousel.css';
+import carImages from '../../data/cars_data';
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
   const delay = 5000;
+
+  const images = carImages
+    .map(car => car.image)
+    .sort(() => Math.random() - 0.5);
+
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -40,13 +38,10 @@ export default function Carousel() {
   };
 
   return (
-    <div className="carousel-wrapper">
-      <h1 className="carousel-title">Drive your dream. Today.</h1>
-      <p className="carousel-subtitle">Experience luxury, redefined.</p>
-
-      <div className="carousel-container">
+    <div className="car-carousel-wrapper">
+      <div className="car-carousel-container">
         <div
-          className="carousel-slider"
+          className="car-carousel-slider"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((src, idx) => (
@@ -54,27 +49,29 @@ export default function Carousel() {
               key={idx}
               src={src}
               alt={`Slide ${idx}`}
-              className="carousel-image"
+              className="car-carousel-image"
             />
           ))}
         </div>
 
-        <button className="carousel-button left" onClick={prevSlide}>
+        <button className="car-carousel-button left" onClick={prevSlide}>
           &#x2039;
         </button>
-        <button className="carousel-button right" onClick={nextSlide}>
+        <button className="car-carousel-button right" onClick={nextSlide}>
           &#x203A;
         </button>
-      </div>
-
-      <div className="carousel-dots">
+      
+      <div className="car-carousel-dots">
         {images.map((_, idx) => (
           <span
             key={idx}
-            className={`carousel-dot ${idx === currentIndex ? 'active' : ''}`}
+            className={`car-carousel-dot ${idx === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(idx)}
           />
         ))}
+      </div>
+      
+      
       </div>
     </div>
   );

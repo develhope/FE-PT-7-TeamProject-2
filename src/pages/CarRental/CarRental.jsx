@@ -1,17 +1,18 @@
-import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import Carousel from '../../components/CarRental/Carousel';
+import CarHero from '../../components/CarRental/CarHero'
 import CarList from '../../components/CarRental/CarList';
-import './CarRental.css';
+import Arrow from '../../components/CarRental/Arrow';
+import BrandCarousel from '../../components/CarRental/BrandCarousel'
+import '../../index.css';
 
-function App() {
+function CarRental() {
   return (
-    <div>
-      <Carousel />
-      <CarList />
-    </div>
+      <>
+        <CarHero />
+        <BrandCarousel />
+        <CarList />
+        <Arrow />
+      </>
   );
 }
 
-export default App;
+export default CarRental;
