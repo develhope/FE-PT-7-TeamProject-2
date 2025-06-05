@@ -44,7 +44,7 @@ const CarDetails = () => {
               <tr><th>Sound System</th><td>{car.sound_system}</td></tr>
               <tr><th>Navigation</th><td>{car.navigation ? "Yes" : "No"}</td></tr>
               <tr><th>Driver Assistance</th><td>{car.driver_assistance?.join(', ')}</td></tr>
-              <tr><th>Deposit Required</th><td>€{car.deposit_required}</td></tr>
+              <tr><th>Deposit Required</th><td>${car.deposit_required}</td></tr>
               <tr><th>Chauffeur Service</th><td>{car.chauffeur_service ? "Available" : "Not Available"}</td></tr>
               <tr><th>Delivery Service</th><td>{car.delivery_service ? "Available" : "Not Available"}</td></tr>
               <tr><th>Special Features</th><td>{car.special_features || "N/A"}</td></tr>
