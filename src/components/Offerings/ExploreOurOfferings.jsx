@@ -18,7 +18,7 @@ function ExploreOurOfferings() {
       description: "World-class culinary experiences",
     },
     {
-      link: "/luxury-car-rental",
+      link: "/car-rental",
       imgSrc: "/Menù & carousel img/luxuryCar.png",
       title: "Luxury Car",
       description: "Experience Vegas with style",
