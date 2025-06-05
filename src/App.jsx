@@ -14,8 +14,10 @@ import LotusReservation from "./pages/Reservation/LotusReservation";
 import FineDining from "./pages/FineDining/FineDining";
 import FaqPage from "./pages/FooterLinks/Faq/Faq";
 import NewsletterPage from "./pages/NewsletterPage/NewsletterPage";
+import ChildrenArea from "./pages/ChildrensArea/ChildrenArea";
 import ThingsToDo from "./pages/ThingsToDo/ThingsToDo";
 import PrivacyCookie from "./pages/FooterLinks/CookiePrivacy/CookiePrivacy";
+import Cocktail from './pages/Cocktails/Cocktail';
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -45,8 +47,10 @@ function App() {
       <Route path="/luxury-car-rental/:id" element={<CarDetails />} />
       <Route path="/faq-footer" element={<FaqPage />} />
       <Route path="/newsletter" element={<NewsletterPage />} />
+      <Route path="/childrenarea" element={<ChildrenArea />} />
       <Route path="/thingstodo" element={<ThingsToDo />} />
       <Route path="/cookie-policy" element={<PrivacyCookie />} />
+      <Route path="/cocktails" element={<Cocktail />} />
     </Routes>
     <Footer />
     </Wrapper>
