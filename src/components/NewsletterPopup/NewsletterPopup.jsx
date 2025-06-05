@@ -34,7 +34,7 @@ function NewsletterPopup() {
             <img
               src="/logo-removebg-preview.png"
               alt="Lotus Las Vegas Logo"
-              className="logo"
+              className="logonl"
             />
             <h1>Lotus Las Vegas</h1>
             <p>

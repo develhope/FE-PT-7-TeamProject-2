@@ -53,7 +53,62 @@
 
 .offerings-description {
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
     text-align: center;
+}
+
+@media (max-width: 900px) {
+    .offerings-card {
+        width: 180px;
+        padding: 12px 6px 10px 6px;
+    }
+    .offerings-image {
+        height: 70px;
+    }
+    .offerings-title {
+        font-size: 1rem;
+    }
+    .offerings-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .offerings-card {
+        width: 120px;
+        padding: 8px 2px 8px 2px;
+    }
+    .offerings-image {
+        height: 48px;
+    }
+    .offerings-title {
+        font-size: 0.9rem;
+    }
+    .offerings-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .offerings-card {
+        width: 80vw;
+        min-width: 80px;
+        max-width: 160px;
+        margin: 0 auto;
+        padding: 6px 1px 6px 1px;
+        box-shadow: 0 2px 8px rgba(226, 180, 64, 0.18);
+        display: flex;
+    }
+    .offerings-image {
+        height: 18vw;
+        min-height: 32px;
+        max-height: 60px;
+    }
+    .offerings-title {
+        font-size: 0.8rem;
+    }
+    .offerings-description {
+        font-size: 0.75rem;
+    }
 }
