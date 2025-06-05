@@ -1,0 +1,58 @@
+.car-hero-main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: var(--clr-dark-blue);
+  min-height: 700px;
+  margin-bottom: 40px;
+}
+
+.car-hero-heading {
+  width: 100%;
+  text-align: center;
+  color: var(--clr-gold);
+  margin-top: 20px;
+}
+
+.car-hero-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.car-hero-heading p {
+  font-size: 1.2rem;
+  color: #CBD5E1;
+}
+
+.car-hero-carousel-section {
+  flex: 1;
+  min-width: 500px;
+  max-width: 50%;
+}
+
+.car-hero-services-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  background-color: var(--clr-dark-blue);
+}
+
+.car-hero-brand-carousel-section {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .car-hero-main-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .car-hero-carousel-section,
+  .car-hero-services-section {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}

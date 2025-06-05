@@ -1,0 +1,120 @@
+.car-body {
+  padding: 40px 20px;
+}
+
+.scheda-container-auto {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.titolo-auto {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--clr-gold);
+}
+
+.immagine-container-auto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.immagine-auto-centrata {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 40px rgba(35, 106, 213, 0.86);
+}
+
+.prezzo-auto-centrato {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: rgb(230, 230, 230);
+}
+
+.dettagli-auto {
+  margin: 2rem auto 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.car-specs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.car-specs th,
+.car-specs td {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.442);
+  padding: 8px 12px;
+  
+  text-align: left;
+  font-weight: normal;
+}
+
+.car-specs th {
+  color: var(--clr-gold);
+  width: 35%;
+}
+
+.car-specs td {
+  color: whitesmoke;
+}
+
+
+@media (max-width: 768px) {
+  .titolo-auto {
+    font-size: 2rem;
+  }
+
+  .prezzo-auto-centrato {
+    font-size: 1.1rem;
+  }
+
+  .dettagli-auto {
+    padding: 0 2rem;
+  }
+
+  .car-specs th,
+  .car-specs td {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titolo-auto {
+    font-size: 1.7rem;
+  }
+
+  .scheda-container-auto {
+    padding: 20px 10px;
+  }
+
+  .immagine-auto-centrata {
+    margin-bottom: 2rem;
+  }
+
+  .prezzo-auto-centrato {
+    font-size: 1rem;
+  }
+
+  .dettagli-auto {
+    padding: 0 0.5rem;
+  }
+
+  .car-specs {
+    font-size: 0.9rem;
+  }
+
+  .car-specs th,
+  .car-specs td {
+    padding: 0.5rem;
+  }
+}
