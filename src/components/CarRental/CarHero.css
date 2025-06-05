@@ -17,12 +17,10 @@
 }
 
 .car-hero-heading h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px !important;
 }
 
 .car-hero-heading p {
-  font-size: 1.2rem;
   color: #CBD5E1;
 }
 

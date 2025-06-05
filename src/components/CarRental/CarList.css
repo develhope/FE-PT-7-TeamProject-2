@@ -11,7 +11,8 @@
 }
 
 .car-grid h2 {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem !important;
   color: var(--clr-gold);
 }
 

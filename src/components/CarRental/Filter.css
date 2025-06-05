@@ -2,12 +2,13 @@
   background-color: var(--clr-blue);
   padding: 2rem;
   border-radius: 12px;
-  width: 250px;
+  margin-top: 50px;
+  width: 300px;
   height: fit-content;
 }
 
 .car-filter-panel h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   font-size: 1.2rem;
   display: flex;
   gap: 0.5rem;
