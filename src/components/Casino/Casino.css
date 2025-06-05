@@ -1,7 +1,17 @@
 .wcc-casino-section {
   background-color: var(--wcc-primary-bg);
   color: var(--wcc-text-main);
-  padding: 10px 20px;
+  padding: 60px 20px 80px 20px;
   text-align: center;
   font-family: 'Inter', sans-serif;
+  min-height: 520px; /* più compatto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+
+
+
+

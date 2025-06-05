@@ -1,0 +1,126 @@
+
+
+/* Base generale */
+body {
+  margin: 0;
+  background-color: #0a0f1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Overlay del popup */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 11, 16, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Contenitore del popup */
+.popup-box {
+  background-color: #0B1120;
+  border: 2px solid #C4A55F;
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 400px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(213, 205, 63, 0.4);
+  position: relative;
+}
+
+/* Logo immagine */
+.popup-box img,
+.logonl {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Titolo */
+.popup-box h1 {
+  font-size: 2.2em;
+  margin: -10px 0 0 0;
+  color: #C4A55F;
+}
+
+/* Paragrafi */
+.popup-box p {
+  font-size: 0.8em;
+  margin: 0.5em 0;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+/* Email input */
+.popup-box input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin: 1em 0;
+  font-size: 1em;
+  background-color: #C4A55F;
+  color: #ffffff;
+}
+
+.popup-box input[type="email"]::placeholder{
+  color: #ffffff;
+  opacity: 1;
+}
+/* Bottone submit */
+.popup-box input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #0B1120;
+  color: #C4A55F;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-box input[type="submit"]:hover {
+  background-color: #3c486a;
+  color: #C4A55F;
+}
+
+/* Link "Skip" */
+.skip-link {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #C4A55F;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+/* Nota privacy */
+.privacy-note {
+  font-size: 0.75em;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+/* Animazione */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

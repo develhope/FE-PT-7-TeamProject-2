@@ -107,10 +107,10 @@
 .spa-form select {
     max-width: 150px;
     padding: 6px;
-    border: 1px solid #C4A55F;
+    border: 1px solid var(--clr-gold);
     border-radius: 8px;
     background-color: var(--clr-dark-blue);
-    color: #a4894e;
+    color: var(--clr-gold);
     font-size: 12px;
     margin-bottom: 10px;
     font-size: 14px;

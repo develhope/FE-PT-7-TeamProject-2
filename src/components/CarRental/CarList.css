@@ -1,0 +1,119 @@
+.car-section {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--clr-dark-blue);
+  flex-wrap: wrap;
+}
+
+.car-grid {
+  flex: 1;
+}
+
+.car-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem !important;
+  color: var(--clr-gold);
+}
+
+.car-cards {
+  display: grid;
+  grid-template-columns: rrepeat(3 auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.car-card {
+  position: relative;
+  background-color: var(--clr-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  min-height: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 15px 15px rgba(35, 106, 213, 0.86);
+}
+
+.car-card img {
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  aspect-ratio: 4 / 3;
+}
+
+.car-info {
+  padding: 1rem;
+}
+
+.car-type {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.80rem;
+  border-radius: 999px;
+  background-color: var(--clr-dark-blue);
+  color: rgba(255, 255, 255, 0.836);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.carlist-specs-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.carlist-spec-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carlist-spec-item i {
+  font-size: 18px;
+  color: rgb(67, 142, 255);
+}
+
+.car-card-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#ffffff;
+}
+
+@media (max-width: 768px) {
+  .car-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .carlist-specs-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .carlist-spec-item i {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 900px) {
+  .car-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

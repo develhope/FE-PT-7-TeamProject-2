@@ -1,0 +1,114 @@
+.offerings-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.offerings-card {
+    background: var(--clr-blue);
+    border: 2px solid var(--clr-gold);
+    border-radius: 16px;
+    padding: 24px 20px 20px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+    width: 320px;
+    cursor: pointer;
+    
+}
+
+.offerings-card:hover {
+    box-shadow: 0 6px 24px rgba(226, 180, 64, 0.18);
+}
+
+.offerings-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: none;
+}
+
+.offerings-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.offerings-title {
+    color: var(--clr-gold);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.offerings-description {
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .offerings-card {
+        width: 180px;
+        padding: 12px 6px 10px 6px;
+    }
+    .offerings-image {
+        height: 70px;
+    }
+    .offerings-title {
+        font-size: 1rem;
+    }
+    .offerings-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .offerings-card {
+        width: 120px;
+        padding: 8px 2px 8px 2px;
+    }
+    .offerings-image {
+        height: 48px;
+    }
+    .offerings-title {
+        font-size: 0.9rem;
+    }
+    .offerings-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .offerings-card {
+        width: 80vw;
+        min-width: 80px;
+        max-width: 160px;
+        margin: 0 auto;
+        padding: 6px 1px 6px 1px;
+        box-shadow: 0 2px 8px rgba(226, 180, 64, 0.18);
+        display: flex;
+    }
+    .offerings-image {
+        height: 18vw;
+        min-height: 32px;
+        max-height: 60px;
+    }
+    .offerings-title {
+        font-size: 0.8rem;
+    }
+    .offerings-description {
+        font-size: 0.75rem;
+    }
+}
